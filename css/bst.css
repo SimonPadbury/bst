@@ -1,0 +1,142 @@
+/*
+IDEA responsive images
+*/
+
+.img-resp img {
+  width:100%;
+  height:auto;
+}
+
+
+/*
+Navbar hover-dropdown
+*/
+@media (min-width: 768px) {
+  .navbar-nav .caret {
+    display: none;
+  }
+	.navbar-nav .open ul {
+    display: none;
+	}
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > .open > a:focus {
+    color: #333;
+    background: transparent;
+  }
+  .navbar-default .navbar-nav > li:hover {
+    color: #333;
+    background: #e7e7e7;
+  }
+	.navbar-nav .hovernav:hover > .dropdown-menu {
+    display: block;
+	}
+}
+
+/*
+Max content widths
+*/
+.size-auto, 
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto;
+}
+
+/*
+Header logo
+An example of how to use CSS to display an image as a background of an HTML element.
+*/
+
+#site-title a {
+  display: inline-block;
+  padding: 30px 0 30px 100px;
+  background: url(../img/bst.png) 0 0 no-repeat;
+  background-size: 95px 95px;
+}
+#site-title a:hover {
+  background: url(../img/bst-hover.png) 0 0 no-repeat;
+  background-size: 95px 95px;
+  text-decoration: none;
+}
+
+/*
+Sidebar
+The sidebar is classed .sidebar-offcanvas to make the offcanvas js toggle work. This class is also being used for the following rules.
+*/
+.sidebar-offcanvas .panel {
+  padding: 20px;
+}
+.sidebar-offcanvas ul {
+  list-style-type: none;
+  padding: 0;
+}
+.sidebar-offcanvas li {
+  margin: 10px 0;
+}
+
+/*
+Footer
+*/
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer li {
+  margin: 20px 0;
+}
+
+
+/*
+Commentlist
+*/
+.commentlist, .commentlist ul {
+  list-style-type: none;
+}
+.commentlist li {
+  padding: 20px;
+}
+.commentlist ul li {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+/*
+Off-canvas Sidebar
+Note below, the media query max-width is set at 767px (not 768px). If this media query for the off-canvas sidebar were set at 768px then the sidebar would be off-canvas at 768px while the Bootstrap grid layout is at "col-sm-" but this layout requires the sidebar to be visible (not off-canvas).
+*/
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
+
