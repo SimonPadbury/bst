@@ -13,7 +13,8 @@ BST is a (very) simple WordPress starter theme loaded with Bootstrap 3.
 * A starter CSS theme – bst.css, enqueued.
 * Visual editor stylesheet – into which the same Bootsrap 3 and starter CSS theme are preloaded by @import, so that what you see in the visual editor is (mostly) the same as the front end.
 * jQuery called from Google CDN, with a local fallback when offline.
-* Modernizr.js, respond.js and html5shiv.css included – enqueued.Clean up scripts in place – for helping web design newbies find their way around the HTML outputted by WordPress. (Do not rely on these for security.)
+* Modernizr.js, respond.js and html5shiv.css included – enqueued.
+* Clean up scripts in place – for helping web design newbies find their way around the HTML outputted by WordPress. (Do not rely on these for security.)
 * A few simple jQuery scripts – in bst.js, enqueued. (E.g. the Bootstrap 3 offcanvas sidebar.)
 * Simple, intuitive, clean code.
 * CSS, JS, functions and template parts in different folders.
