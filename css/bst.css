@@ -1,15 +1,7 @@
 /*
-IDEA responsive images
-*/
-
-.img-resp img {
-  width:100%;
-  height:auto;
-}
-
-
-/*
-Navbar hover-dropdown
+Navbar "hovernav" dropdown menu - this works only for screen sizes larger than phones.
+The Bootstrap CSS is unchanged. If you don't want this, delete this segment of the CSS
+and delete the corresponding segment of bst.js
 */
 @media (min-width: 768px) {
   .navbar-nav .caret {
@@ -20,15 +12,47 @@ Navbar hover-dropdown
 	}
   .navbar-default .navbar-nav > .open > a,
   .navbar-default .navbar-nav > .open > a:hover,
-  .navbar-default .navbar-nav > .open > a:focus {
+  .navbar-default .navbar-nav > .open > a:focus,
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background: none;
+  }
+  .navbar-inverse .navbar-nav > .open > a,
+  .navbar-inverse .navbar-nav > .open > a:hover,
+  .navbar-inverse .navbar-nav > .open > a:focus,
+  .navbar-inverse .navbar-nav > .active > a,
+  .navbar-inverse .navbar-nav > .active > a:hover,
+  .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #969696;
+    background: none;
+  }
+  .navbar-default .navbar-nav > .hovernav > a {
+		color: #555;
+	}
+  .navbar-inverse .navbar-nav > .hovernav > a {
+		color: #969696;
+	}
+  .navbar-default .navbar-nav > .hovernav:hover > a,
+  .navbar-default .navbar-nav > .hovernav:hover > a:hover,
+  .navbar-default .navbar-nav > .hovernav:hover > a:focus {
     color: #333;
     background: transparent;
   }
-  .navbar-default .navbar-nav > li:hover {
-    color: #333;
+  .navbar-inverse .navbar-nav > .hovernav:hover > a,
+  .navbar-inverse .navbar-nav > .hovernav:hover > a:hover,
+  .navbar-inverse .navbar-nav > .hovernav:hover > a:focus {
+    color: #fff;
+    background: transparent;
+  }
+	.navbar-default .navbar-nav > li:hover {
     background: #e7e7e7;
   }
-	.navbar-nav .hovernav:hover > .dropdown-menu {
+  .navbar-inverse .navbar-nav > li:hover {
+    background: #080808;
+  }
+  .navbar-nav .hovernav:hover > .dropdown-menu {
     display: block;
 	}
 }
