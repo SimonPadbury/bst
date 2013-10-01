@@ -3,6 +3,10 @@
 function bst_setup() {
   add_editor_style('css/editor-style.css');
   add_theme_support('post-thumbnails');
+	update_option('thumbnail_size_w', 170);
+  update_option('medium_size_w', 470);
+  update_option('large_size_w', 970);
+
 }
 add_action('init', 'bst_setup');
 
