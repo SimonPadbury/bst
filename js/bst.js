@@ -10,8 +10,9 @@ $(document).ready(function() {
     $('.row-offcanvas').toggleClass('active');
 	});
 
-  /*
-	Navbar hover dropdown
+  	/*
+	"Hovernav" navbar dropdown on hover
+	Delete this segment if you don't want it, and delete the corresponding CSS in bst.css
 	Uses jQuery Media Query - see http://www.sitepoint.com/javascript-media-queries/
 	*/
 	var mq = window.matchMedia('(min-width: 768px)');
@@ -21,8 +22,7 @@ $(document).ready(function() {
   	$('ul.navbar-nav li').removeClass('hovernav');
   };
 	/*
-	The addClass/removeClass also needs to be triggered
-  on page resize <=> 768px
+	The addClass/removeClass also needs to be triggered on page resize <=> 768px
 	*/
   if (matchMedia) {
     var mq = window.matchMedia('(min-width: 768px)');
