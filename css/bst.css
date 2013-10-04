@@ -116,8 +116,47 @@ Footer
 /*
 Commentlist
 */
-.commentlist, .commentlist ul {
+ol.commentlist {
+	counter-reset: li; /* Initiate a counter */
+	padding: 0;
+}
+ol.commentlist ul {
+  padding: 0;
+}
+ol.commentlist > li {
+	position: relative;
+	margin: 0 0 20px 0;
+	list-style: none; /* Disable the normal item numbering */
+}
+ol.commentlist > li:before {
+  content: "Thread " counter(li); /* Use the counter as content */
+  counter-increment: li; /* Increment the counter by 1 */
+  position:absolute;  
+  top: 0;
+  right: 0;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-bottom-left-radius: 4px;
+  padding: 5px 20px 5px 10px;
+  color: #999;
+}
+ol.commentlist li ol,
+ol.commentlist li ul {
   list-style-type: none;
+  margin: 0;
+}
+
+.commentlist li li {
+  background: #f8f8f8;
+}
+.commentlist li li li {
+  background: #fff;
+}
+.commentlist li li li li {
+  background: #f8f8f8;
+}
+.commentlist li li li li li li {
+  background: #fff;
 }
 .commentlist li {
   padding: 20px;
@@ -125,6 +164,9 @@ Commentlist
 .commentlist ul li {
   margin-top: 20px;
   margin-bottom: 0;
+}
+.reply p {
+  margin: 0;
 }
 
 /*
