@@ -17,9 +17,8 @@ BST is a (very) simple WordPress starter theme loaded with Bootstrap 3.
 * Clean up scripts in place – for helping web design newbies find their way around the HTML outputted by WordPress. (Do not rely on these for security.)
 * A few simple jQuery scripts – in bst.js, enqueued. Examples:
 
-– the Bootstrap 3 offcanvas sidebar.
-
-– "hovernav" : the navbar has some modifications that make the dropdown menu appear on hover (js plus css). The Bootstrap js and css has not been changed, so you can easily delete the "hovernav" segments of bst.js and bst.css if you don't want them. 
+– The Bootstrap 3 offcanvas sidebar.
+– "Hovernav" : the navbar has some modifications that make the dropdown menu appear on hover (jQuery plus css). The Bootstrap js and css have not been changed, so you can easily delete the "hovernav" segments of bst.js and bst.css if you don't want them. 
 
 * Custom comment list callback.
 * Simple, intuitive, clean code.
