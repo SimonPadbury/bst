@@ -19,24 +19,9 @@ if (have_comments()) : ?>
  <i class="glyphicon glyphicon-comment"></i>&nbsp; Comments: <?php comments_number('None', '1', '%'); ?>
 </p>
   
-<div class="commentlist">
-  <?php wp_list_comments( $args = array(
-  'walker'            => null,
-  'max_depth'         => '',
-  'style'             => 'ul',
-  'callback'          => null,
-  'end-callback'      => null,
-  'type'              => 'all',
-  'reply_text'        => 'Reply',
-  'page'              => '',
-  'per_page'          => '3',
-  'avatar_size'       => 0,
-  'reverse_top_level' => null,
-  'reverse_children'  => '',
-  'format'            => 'html5',
-  'short_ping'        => false
-)); ?>
-</div>
+<ol class="commentlist">
+  <?php wp_list_comments('type=comment&callback=bst_comment');?>
+</ol>
 
 <ul class="pagination">
   <li class="older"><?php previous_comments_link() ?></li>
