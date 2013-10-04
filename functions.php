@@ -8,5 +8,6 @@ require_once locate_template('/func/setup.php');
 require_once locate_template('/func/enqueues.php');
 require_once locate_template('/func/navbar.php');
 require_once locate_template('/func/widgets.php');
+require_once locate_template('/func/feedback.php');
 
 ?>
