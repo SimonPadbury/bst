@@ -41,7 +41,7 @@ function my_css_attributes_filter($var) {
 }
 
 /*
-Filter to remove comment author webaite link. Use this if you wish to cut down the amount of spammers in your comments (while retaining the "Your website" comment field).
+Filter to remove comment author website link. Use this if you wish to cut down the amount of spammers in your comments (while retaining the "Your website" comment field).
 See http://www.wpsquare.com/remove-comment-author-website-link-wordpress/
 */
 function author_link(){
@@ -56,62 +56,5 @@ function author_link(){
 	return $return;
 }
 add_filter('get_comment_author_link', 'author_link');
-
-/*
-Rewrites
-See http://gist.github.com/wycks/2315295
-To which I have added the final (was missing) "}" and the fonts/ folder.
-
-Rewrite /wp-content/themes/theme-name/css/ to /css/
-Rewrite /wp-content/themes/theme-name/js/ to /js/
-Rewrite /wp-content/themes/theme-name/fonts/ to /fonts/
-Rewrite /wp-content/themes/theme-name/img/ to /img/
-Rewrite /wp-content/plugins/ to /plugins/
-*/
-
-function bst_flush_rewrites()  {
-  global $wp_rewrite;
-  $wp_rewrite->flush_rules();
-}
- 
-function bst_add_rewrites($content)  {
-  $theme_name = next(explode('/themes/', get_stylesheet_directory()));
-  global $wp_rewrite;
-  $bst_new_non_wp_rules = array(
-    'css/(.*)' => 'wp-content/themes/'. $theme_name . '/css/$1',
-    'js/(.*)' => 'wp-content/themes/'. $theme_name . '/js/$1',
-    'fonts/(.*)' => 'wp-content/themes/'. $theme_name . '/fonts/$1',
-    'img/(.*)' => 'wp-content/themes/'. $theme_name . '/img/$1',
-    'plugins/(.*)' => 'wp-content/plugins/$1'
-  );
-  $wp_rewrite->non_wp_rules += $bst_new_non_wp_rules;
-}
- 
-add_action('admin_init', 'bst_flush_rewrites');
- 
-function bst_clean_assets($content) {
-    $theme_name = next(explode('/themes/', $content));
-    $current_path = '/wp-content/themes/' . $theme_name;
-    $new_path = '';
-    $content = str_replace($current_path, $new_path, $content);
-    return $content;
-}
- 
-function bst_clean_plugins($content)  {
-    $current_path = '/wp-content/plugins';
-    $new_path = '/plugins';
-    $content = str_replace($current_path, $new_path, $content);
-    return $content;
-}
- 
-add_action('generate_rewrite_rules', 'bst_add_rewrites');
-if (!is_admin()) {
-  add_filter('plugins_url', 'bst_clean_plugins');
-  add_filter('bloginfo', 'bst_clean_assets');
-  add_filter('stylesheet_directory_uri', 'bst_clean_assets');
-  add_filter('template_directory_uri', 'bst_clean_assets');
-  add_filter('script_loader_src', 'bst_clean_plugins');
-  add_filter('style_loader_src', 'bst_clean_plugins');
-}
 
 ?>
