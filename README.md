@@ -22,13 +22,13 @@ This theme has been built for use as a starter theme and as a learning aid for p
 
 ###Hovernav
 
-The navbar has some modifications that make the dropdown menu appear on hover (jQuery plus css). The Bootstrap 3 js and css have not been changed. You can easily delete the "hovernav" segments of bst.js and bst.css if you don't want them. 
+The navbar has some modifications that make the dropdown menu appear on hover (in bst.js plus bst.css). The Bootstrap js and css have not been changed. You can easily delete the "hovernav" segments of bst.js and bst.css if you don't want them. 
 
 ##Notes on WooCommerce support
 
 * You will need to install the WooCommerce plugin - http://wordpress.org/plugins/woocommerce/
 * I have included the minimum additions to BST to make WooCommerce work (this is a starter theme).
-* WooCommerce uses WooCommerce-styled buttons, icons, etc. in its shop, cart, checkout etc. -- these are not the same as the Bootstrap buttons, icons etc. I have not replaced the WooCommerce buttons with Bootstrap buttons, because that would mean that you have no control over the appearance of these buttons from within the WooCommerce plugin settings.
+* WooCommerce uses WooCommerce-styled buttons, icons, etc. in its shop, cart, checkout etc. - these are not the same as the Bootstrap buttons, icons etc. I have not replaced the WooCommerce buttons with Bootstrap buttons, because that would mean that you have no control over the appearance of these buttons from within the WooCommerce plugin settings.
 * However I have applied Bootstrap styling to the cart and checkout forms, using jQuery insertion of Bootstrap CSS classes.
 * You will need to add a "Shop" link, e.g. to your primary menu
 * You will need to add some WooCommerce Widgets to the sidebar (at minimum, WooCommerce Cart and WooCommerce Categories)
