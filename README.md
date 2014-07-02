@@ -28,7 +28,7 @@ The navbar has some modifications that make the dropdown menu appear on hover (i
 ##Notes on WooCommerce support
 
 * You will need to install the WooCommerce plugin - http://wordpress.org/plugins/woocommerce/
-* I have included the minimum additions to BST to make WooCommerce work (this is a starter theme).
+* I have included the *minimum* additions to BST to make WooCommerce work (this is a starter theme). It will work fine with these minimum additions, but you can add more style and improve the layout.
 * WooCommerce uses WooCommerce-styled buttons, icons, etc. in its shop, cart, checkout etc. - these are not the same as the Bootstrap buttons, icons etc. I have not replaced the WooCommerce buttons with Bootstrap buttons, because that would mean that you have no control over the appearance of these buttons from within the WooCommerce plugin settings.
 * However I have applied Bootstrap styling to the cart and checkout forms, using jQuery insertion of Bootstrap CSS classes.
 * You will need to add a "Shop" link, e.g. to your primary menu
