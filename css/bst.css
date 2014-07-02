@@ -85,6 +85,9 @@ An example of how to use CSS to display an image as a background of an HTML elem
   background-size: 95px 95px;
   text-decoration: none
 }
+.main-nav {
+  margin-top: 20px
+}
 
 /*
 Sidebar
