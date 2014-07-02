@@ -66,3 +66,5 @@ function bst_browser_body_class( $classes ) {
     return $classes;
 }
 add_filter( 'body_class', 'bst_browser_body_class' );
+
+add_theme_support( 'woocommerce' );
