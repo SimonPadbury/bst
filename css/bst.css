@@ -1,195 +1,34 @@
-/*
-Navbar "hovernav" dropdown menu - this works only for screen sizes larger than phones.
-The Bootstrap CSS is unchanged. If you don't want this, delete this segment of the CSS
-and delete the corresponding segment of bst.js
-*/
-@media (min-width: 768px) {
-  .navbar-nav .caret {
-    display: none
-  }
-	.navbar-nav .open ul {
-    display: none
-	}
-  .navbar-default .navbar-nav > .open > a,
-  .navbar-default .navbar-nav > .open > a:hover,
-  .navbar-default .navbar-nav > .open > a:focus,
-  .navbar-default .navbar-nav > .active > a,
-  .navbar-default .navbar-nav > .active > a:hover,
-  .navbar-default .navbar-nav > .active > a:focus {
-    color: #555;
-    background: none
-  }
-  .navbar-inverse .navbar-nav > .open > a,
-  .navbar-inverse .navbar-nav > .open > a:hover,
-  .navbar-inverse .navbar-nav > .open > a:focus,
-  .navbar-inverse .navbar-nav > .active > a,
-  .navbar-inverse .navbar-nav > .active > a:hover,
-  .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #969696;
-    background: none
-  }
-  .navbar-default .navbar-nav > .hovernav > a {
-		color: #555
-	}
-  .navbar-inverse .navbar-nav > .hovernav > a {
-		color: #969696
-	}
-  .navbar-default .navbar-nav > .hovernav:hover > a,
-  .navbar-default .navbar-nav > .hovernav:hover > a:hover,
-  .navbar-default .navbar-nav > .hovernav:hover > a:focus {
-    color: #333;
-    background: transparent
-  }
-  .navbar-inverse .navbar-nav > .hovernav:hover > a,
-  .navbar-inverse .navbar-nav > .hovernav:hover > a:hover,
-  .navbar-inverse .navbar-nav > .hovernav:hover > a:focus {
-    color: #fff;
-    background: transparent
-  }
-	.navbar-default .navbar-nav > li:hover {
-    background: #e7e7e7
-  }
-  .navbar-inverse .navbar-nav > li:hover {
-    background: #080808
-  }
-  .navbar-nav .hovernav:hover > .dropdown-menu {
-    display: block
-	}
-}
+<?php
 
-/*
-Max content widths
-*/
-.size-auto, 
-.size-full,
-.size-large,
-.size-medium,
-.size-thumbnail {
-	max-width: 100%;
-	height: auto
-}
+function bst_setup() {
+  add_editor_style('css/editor-style.css');
+  add_theme_support('post-thumbnails');
+	update_option('thumbnail_size_w', 170);
+  update_option('medium_size_w', 470);
+  update_option('large_size_w', 970);
 
-/*
-Header logo
-An example of how to use CSS to display an image as a background of an HTML element.
-*/
+}
+add_action('init', 'bst_setup');
 
-#site-title a {
-  display: inline-block;
-  padding: 30px 0 30px 100px;
-  background: url(../img/bst.png) 0 0 no-repeat;
-  background-size: 95px 95px
-}
-#site-title a:hover {
-  background: url(../img/bst-hover.png) 0 0 no-repeat;
-  background-size: 95px 95px;
-  text-decoration: none
-}
+if (! isset($content_width))
+	$content_width = 600;
 
-/*
-Sidebar
-*/
+function bst_search_form( $form ) {
+    $form = '<form class="form-inline" role="search" method="get" id="searchform" action="' . home_url('/') . '" >
+    <div class="form-group">
+		    <input class="form-control" type="text" value="' . get_search_query() . '" name="s" id="s" />
+    </div>
+		<button type="submit" id="searchsubmit" value="'. esc_attr__('Search') .'" class="btn btn-default"><i class="glyphicon glyphicon-search"></i> Search</button>
+    </form>';
+    return $form;
+}
+add_filter( 'get_search_form', 'bst_search_form' );
 
-.sidebar ul,
-.sidebar ol {
-  list-style-type: none;
-  padding: 0
+function bst_excerpt_readmore() {
+    return '&nbsp; <a href="'. get_permalink() . '">' . '&hellip; Read more <i class="glyphicon glyphicon-arrow-right"></i>' . '</a></p>';
 }
-.sidebar li {
-  margin: 10px 0
-}
+add_filter('excerpt_more', 'bst_excerpt_readmore');
 
-/*
-Footer
-*/
+add_theme_support( 'woocommerce' );
 
-.footer ul,
-.footer ol {
-  list-style-type: none;
-  padding: 0
-}
-.footer li {
-  margin: 10px 0
-}
-.sub-footer p {
-  text-align: center
-}
-
-/*
-Commentlist
-*/
-
-ol.commentlist {
-	counter-reset: li; /* Initiate a counter */
-	padding: 0
-}
-ol.commentlist ul {
-  padding: 0
-}
-ol.commentlist > li {
-	position: relative;
-	margin: 0 0 20px 0;
-	list-style: none /* Disable the normal item numbering */
-}
-ol.commentlist > li:before {
-  content: "Thread " counter(li); /* Use the counter as content */
-  counter-increment: li; /* Increment the counter by 1 */
-  position:absolute;  
-  top: 0;
-  right: 0;
-  border-bottom: 1px solid #ddd;
-  border-left: 1px solid #ddd;
-  border-bottom-left-radius: 4px;
-  padding: 5px 20px 5px 10px;
-  color: #999
-}
-ol.commentlist li ol,
-ol.commentlist li ul {
-  list-style-type: none;
-  margin: 0
-}
-
-.commentlist li li {
-  background: #f8f8f8;
-}
-.commentlist li li li {
-  background: #fff
-}
-.commentlist li li li li {
-  background: #f8f8f8
-}
-.commentlist li li li li li li {
-  background: #fff
-}
-.commentlist li {
-  padding: 20px
-}
-.commentlist ul li {
-  margin-top: 20px;
-  margin-bottom: 0
-}
-.reply p {
-  margin: 0
-}
-
-/*
-Woocommerce re-styling
-*/
-
-.woocommerce a:focus {
-  outline: none
-}
-.woocommerce .count {
-  background: inherit
-}
-.woocommerce .added_to_cart {
-  display: block !important
-}
-.woocommerce .woocommerce-error:before,
-.woocommerce .woocommerce-info:before,
-.woocommerce .woocommerce-message:before,
-.woocommerce-page .woocommerce-error:before,
-.woocommerce-page .woocommerce-info:before,
-.woocommerce-page .woocommerce-message:before {
-  padding-top: 0
-}
+?>
