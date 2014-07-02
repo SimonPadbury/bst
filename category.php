@@ -6,7 +6,7 @@
     <div class="col-xs-12 col-sm-8">
       <div id="content" role="main">
         <header class="archive-header">
-				<h3>Blog Category: <?php single_cat_title(''); ?></h3>
+	<h3>Blog Category: <?php single_cat_title(''); ?></h3>
         <hr/>
         <?php if(have_posts()): while(have_posts()): the_post();?>
         <article role="article" id="post_<?php the_ID()?>">
