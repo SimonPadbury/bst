@@ -2,13 +2,6 @@ $(document).ready(function() {
 
   $(".commentlist li").addClass("panel panel-default");
 	$(".comment-reply-link").addClass("btn btn-default");
-  
-	/*
-	Offcanvas toggle
-	*/
-  $('[data-toggle=offcanvas]').click(function(){
-    $('.row-offcanvas').toggleClass('active');
-	});
 
   	/*
 	"Hovernav" navbar dropdown on hover
@@ -21,7 +14,7 @@ $(document).ready(function() {
   } else {
   	$('ul.navbar-nav li').removeClass('hovernav');
   };
-	/*
+  	/*
 	The addClass/removeClass also needs to be triggered on page resize <=> 768px
 	*/
   if (matchMedia) {
@@ -36,5 +29,11 @@ $(document).ready(function() {
       $('ul.navbar-nav li').removeClass('hovernav');
     }
   };
-  
+
+  	/*
+	Woocommerce re-styling
+	*/
+  $('div.woocommerce').wrapInner('<article></article>');
+  $('select, .input-text, textarea').addClass('form-control');
+
 });
