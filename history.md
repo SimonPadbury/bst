@@ -12,3 +12,10 @@
 ##v1.2
 
 * Added a custom comment list callback (func/feedback.php) plus changes to incorporate this.
+
+##v1.5
+
+* Updated to Bootstrap 3.2.0 and jQuery 1.11.1
+* Minor improvements.
+* Removed the Bootstrap example off-canvas sidebar from all pages, CSS and JS.
+* Added WooCommerce support (minimum requirement)
