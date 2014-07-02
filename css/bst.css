@@ -5,10 +5,10 @@ and delete the corresponding segment of bst.js
 */
 @media (min-width: 768px) {
   .navbar-nav .caret {
-    display: none;
+    display: none
   }
 	.navbar-nav .open ul {
-    display: none;
+    display: none
 	}
   .navbar-default .navbar-nav > .open > a,
   .navbar-default .navbar-nav > .open > a:hover,
@@ -17,7 +17,7 @@ and delete the corresponding segment of bst.js
   .navbar-default .navbar-nav > .active > a:hover,
   .navbar-default .navbar-nav > .active > a:focus {
     color: #555;
-    background: none;
+    background: none
   }
   .navbar-inverse .navbar-nav > .open > a,
   .navbar-inverse .navbar-nav > .open > a:hover,
@@ -26,34 +26,34 @@ and delete the corresponding segment of bst.js
   .navbar-inverse .navbar-nav > .active > a:hover,
   .navbar-inverse .navbar-nav > .active > a:focus {
     color: #969696;
-    background: none;
+    background: none
   }
   .navbar-default .navbar-nav > .hovernav > a {
-		color: #555;
+		color: #555
 	}
   .navbar-inverse .navbar-nav > .hovernav > a {
-		color: #969696;
+		color: #969696
 	}
   .navbar-default .navbar-nav > .hovernav:hover > a,
   .navbar-default .navbar-nav > .hovernav:hover > a:hover,
   .navbar-default .navbar-nav > .hovernav:hover > a:focus {
     color: #333;
-    background: transparent;
+    background: transparent
   }
   .navbar-inverse .navbar-nav > .hovernav:hover > a,
   .navbar-inverse .navbar-nav > .hovernav:hover > a:hover,
   .navbar-inverse .navbar-nav > .hovernav:hover > a:focus {
     color: #fff;
-    background: transparent;
+    background: transparent
   }
 	.navbar-default .navbar-nav > li:hover {
-    background: #e7e7e7;
+    background: #e7e7e7
   }
   .navbar-inverse .navbar-nav > li:hover {
-    background: #080808;
+    background: #080808
   }
   .navbar-nav .hovernav:hover > .dropdown-menu {
-    display: block;
+    display: block
 	}
 }
 
@@ -66,7 +66,7 @@ Max content widths
 .size-medium,
 .size-thumbnail {
 	max-width: 100%;
-	height: auto;
+	height: auto
 }
 
 /*
@@ -78,55 +78,58 @@ An example of how to use CSS to display an image as a background of an HTML elem
   display: inline-block;
   padding: 30px 0 30px 100px;
   background: url(../img/bst.png) 0 0 no-repeat;
-  background-size: 95px 95px;
+  background-size: 95px 95px
 }
 #site-title a:hover {
   background: url(../img/bst-hover.png) 0 0 no-repeat;
   background-size: 95px 95px;
-  text-decoration: none;
+  text-decoration: none
 }
 
 /*
 Sidebar
-The sidebar is classed .sidebar-offcanvas to make the offcanvas js toggle work. This class is also being used for the following rules.
 */
-.sidebar-offcanvas .panel {
-  padding: 20px;
-}
-.sidebar-offcanvas ul {
+
+.sidebar ul,
+.sidebar ol {
   list-style-type: none;
-  padding: 0;
+  padding: 0
 }
-.sidebar-offcanvas li {
-  margin: 10px 0;
+.sidebar li {
+  margin: 10px 0
 }
 
 /*
 Footer
 */
-.footer ul {
+
+.footer ul,
+.footer ol {
   list-style-type: none;
-  padding: 0;
+  padding: 0
 }
 .footer li {
-  margin: 20px 0;
+  margin: 10px 0
 }
-
+.sub-footer p {
+  text-align: center
+}
 
 /*
 Commentlist
 */
+
 ol.commentlist {
 	counter-reset: li; /* Initiate a counter */
-	padding: 0;
+	padding: 0
 }
 ol.commentlist ul {
-  padding: 0;
+  padding: 0
 }
 ol.commentlist > li {
 	position: relative;
 	margin: 0 0 20px 0;
-	list-style: none; /* Disable the normal item numbering */
+	list-style: none /* Disable the normal item numbering */
 }
 ol.commentlist > li:before {
   content: "Thread " counter(li); /* Use the counter as content */
@@ -138,71 +141,55 @@ ol.commentlist > li:before {
   border-left: 1px solid #ddd;
   border-bottom-left-radius: 4px;
   padding: 5px 20px 5px 10px;
-  color: #999;
+  color: #999
 }
 ol.commentlist li ol,
 ol.commentlist li ul {
   list-style-type: none;
-  margin: 0;
+  margin: 0
 }
 
 .commentlist li li {
   background: #f8f8f8;
 }
 .commentlist li li li {
-  background: #fff;
+  background: #fff
 }
 .commentlist li li li li {
-  background: #f8f8f8;
+  background: #f8f8f8
 }
 .commentlist li li li li li li {
-  background: #fff;
+  background: #fff
 }
 .commentlist li {
-  padding: 20px;
+  padding: 20px
 }
 .commentlist ul li {
   margin-top: 20px;
-  margin-bottom: 0;
+  margin-bottom: 0
 }
 .reply p {
-  margin: 0;
+  margin: 0
 }
 
 /*
-Off-canvas Sidebar
-Note below, the media query max-width is set at 767px (not 768px). If this media query for the off-canvas sidebar were set at 768px then the sidebar would be off-canvas at 768px while the Bootstrap grid layout is at "col-sm-" but this layout requires the sidebar to be visible (not off-canvas).
+Woocommerce re-styling
 */
-@media screen and (max-width: 767px) {
-  .row-offcanvas {
-    position: relative;
-    -webkit-transition: all 0.25s ease-out;
-    -moz-transition: all 0.25s ease-out;
-    transition: all 0.25s ease-out;
-  }
 
-  .row-offcanvas-right
-  .sidebar-offcanvas {
-    right: -50%; /* 6 columns */
-  }
-
-  .row-offcanvas-left
-  .sidebar-offcanvas {
-    left: -50%; /* 6 columns */
-  }
-
-  .row-offcanvas-right.active {
-    right: 50%; /* 6 columns */
-  }
-
-  .row-offcanvas-left.active {
-    left: 50%; /* 6 columns */
-  }
-
-  .sidebar-offcanvas {
-    position: absolute;
-    top: 0;
-    width: 50%; /* 6 columns */
-  }
+.woocommerce a:focus {
+  outline: none
 }
-
+.woocommerce .count {
+  background: inherit
+}
+.woocommerce .added_to_cart {
+  display: block !important
+}
+.woocommerce .woocommerce-error:before,
+.woocommerce .woocommerce-info:before,
+.woocommerce .woocommerce-message:before,
+.woocommerce-page .woocommerce-error:before,
+.woocommerce-page .woocommerce-info:before,
+.woocommerce-page .woocommerce-message:before {
+  padding-top: 0
+}
