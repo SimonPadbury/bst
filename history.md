@@ -17,5 +17,6 @@
 
 * Updated to Bootstrap 3.2.0 and jQuery 1.11.1
 * Minor improvements.
+* Added another navbar (below the site title).
 * Removed the Bootstrap example off-canvas sidebar from all pages, CSS and JS.
-* Added WooCommerce support (minimum requirement)
+* Added WooCommerce support (minimum requirement).
