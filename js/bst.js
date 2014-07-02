@@ -29,11 +29,14 @@ $(document).ready(function() {
       $('ul.navbar-nav li').removeClass('hovernav');
     }
   };
+	/*
+	Forms
+	*/
+  $('select, input[type=text], input[type=email], input[type=password], textarea').addClass('form-control');
 
   	/*
 	Woocommerce re-styling
 	*/
   $('div.woocommerce').wrapInner('<article></article>');
-  $('select, .input-text, textarea').addClass('form-control');
 
 });
