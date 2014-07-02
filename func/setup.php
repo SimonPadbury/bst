@@ -18,7 +18,7 @@ function bst_search_form( $form ) {
     <div class="form-group">
 		    <input class="form-control" type="text" value="' . get_search_query() . '" name="s" id="s" />
     </div>
-		<button type="submit" id="searchsubmit" value="'. esc_attr__('Search') .'" class="btn btn-default"><i class="glyphicon glyphicon-search"></i> Search</button>
+		<button type="submit" id="searchsubmit" value="'. esc_attr__('Search') .'" class="btn btn-default"><i class="glyphicon glyphicon-search"></i> '. esc_attr__('Search') .'</button>
     </form>';
     return $form;
 }
