@@ -7,54 +7,9 @@ and delete the corresponding segment of bst.js
   .navbar-nav .caret {
     display: none
   }
-	.navbar-nav .open ul {
-    display: none
-	}
-  .navbar-default .navbar-nav > .open > a,
-  .navbar-default .navbar-nav > .open > a:hover,
-  .navbar-default .navbar-nav > .open > a:focus,
-  .navbar-default .navbar-nav > .active > a,
-  .navbar-default .navbar-nav > .active > a:hover,
-  .navbar-default .navbar-nav > .active > a:focus {
-    color: #555;
-    background: none
-  }
-  .navbar-inverse .navbar-nav > .open > a,
-  .navbar-inverse .navbar-nav > .open > a:hover,
-  .navbar-inverse .navbar-nav > .open > a:focus,
-  .navbar-inverse .navbar-nav > .active > a,
-  .navbar-inverse .navbar-nav > .active > a:hover,
-  .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #969696;
-    background: none
-  }
-  .navbar-default .navbar-nav > .hovernav > a {
-		color: #555
-	}
-  .navbar-inverse .navbar-nav > .hovernav > a {
-		color: #969696
-	}
-  .navbar-default .navbar-nav > .hovernav:hover > a,
-  .navbar-default .navbar-nav > .hovernav:hover > a:hover,
-  .navbar-default .navbar-nav > .hovernav:hover > a:focus {
-    color: #333;
-    background: transparent
-  }
-  .navbar-inverse .navbar-nav > .hovernav:hover > a,
-  .navbar-inverse .navbar-nav > .hovernav:hover > a:hover,
-  .navbar-inverse .navbar-nav > .hovernav:hover > a:focus {
-    color: #fff;
-    background: transparent
-  }
-	.navbar-default .navbar-nav > li:hover {
-    background: #e7e7e7
-  }
-  .navbar-inverse .navbar-nav > li:hover {
-    background: #080808
-  }
   .navbar-nav .hovernav:hover > .dropdown-menu {
     display: block
-	}
+  }
 }
 
 /*
