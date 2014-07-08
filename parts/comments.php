@@ -66,7 +66,7 @@ if (have_comments()) : ?>
     </div>
     <?php endif; ?>
     <div class="form-group">
-      <label for="comment"><?php _e('Your comment', 'roots'); ?></label>
+      <label for="comment"><?php _e('Your comment', 'bst'); ?></label>
       <textarea name="comment" class="form-control" id="comment" placeholder="Your comment" rows="8" aria-required="true"></textarea>
     </div>
     <p><input name="submit" class="btn btn-default" type="submit" id="submit" value="<?php _e('Submit comment', 'bst'); ?>"></p>
