@@ -11,6 +11,18 @@ and delete the corresponding segment of bst.js
   .navbar-nav .open ul {
     display: none
   }
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background: none
+  }
+  .navbar-inverse .navbar-nav > .open > a,
+  .navbar-inverse .navbar-nav > .open > a:hover,
+  .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #969696;
+    background: none
+  }
   .navbar-nav .hovernav:hover > .dropdown-menu {
     display: block
   }
