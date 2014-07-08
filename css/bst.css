@@ -6,6 +6,9 @@ and delete the corresponding segment of bst.js
 @media (min-width: 768px) {
   .navbar-nav .caret {
     display: none
+  } /* Delete the above if you wish to display the caret */
+  .navbar-nav .open ul {
+    display: none
   }
   .navbar-nav .hovernav:hover > .dropdown-menu {
     display: block
