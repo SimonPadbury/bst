@@ -32,13 +32,15 @@ add_filter( 'the_generator', 'no_generator' );
 /*
 Filters to remove IDs and classes from menu items
 http://stackoverflow.com/questions/5222140/remove-li-class-id-for-menu-items-and-pages-list
-*/
+If you wish to use these filters, then simply un-comment them.
+
 add_filter('nav_menu_css_class', 'my_css_attributes_filter', 100, 1);
 add_filter('nav_menu_item_id', 'my_css_attributes_filter', 100, 1);
 add_filter('page_css_class', 'my_css_attributes_filter', 100, 1);
 function my_css_attributes_filter($var) {
   return is_array($var) ? array() : '';
 }
+*/
 
 /*
 Filter to remove comment author website link. Use this if you wish to cut down the amount of spammers in your comments (while retaining the "Your website" comment field).
