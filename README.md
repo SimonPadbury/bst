@@ -16,7 +16,8 @@
 * A starter CSS theme - `bst.css`, enqueued.
 * Visual editor stylesheet - into which the same Bootsrap 3 and starter CSS theme are preloaded by `@import`, so that **WYSI(M!)WYG** - what you see in the visual editor is (mostly!) what you get at the front end.
 * `Modernizr.js`, `respond.js` and `html5shiv.css` included - enqueued.
-* Clean-up scripts in place - for helping web design newbies find their way around the HTML outputted by WordPress. (Do not rely on these for security.)
+* Clean-up scripts - e.g. removing WordPress-specific stiff grom the <head>. (Do not rely on these for security.)
+* **Optional** in func/cleanup.php some filters are included (but commented-out, so are inactive) for removing WordPress IDs and classes from the navbar(s). If you would like to use these filters, then simply un-comment them.
 * A few simple jQuery scripts - in `bst.js`, enqueued. Example: **Hovernav** (see below).
 * Custom comment list callback.
 * Easily make this theme your own - if you rename `bst.css` to `yourtheme.css`, and `bst.js` to `yourtheme.js`, and then do a global search-and-replace to rename "bst" to "yourtheme" everywhere in the theme's code, this theme will still work. (You must also modify the comments in `style.css`, and rename the root folder from **bst/** to **yourtheme/**.)
