@@ -19,7 +19,7 @@ Show less info to users on failed login for security.
 (Will not let a valid username be known.)
 */
 function show_less_login_info() { 
-    return "<strong>ERROR</strong>: Stop gressing!"; }
+    return "<strong>ERROR</strong>: Stop guessing!"; }
 add_filter( 'login_errors', 'show_less_login_info' );
 
 /*
