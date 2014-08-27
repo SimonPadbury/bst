@@ -50,4 +50,4 @@ Simply delete or remove these things that you won't be needing:
 * **Delete:** in /func/setup.php, scroll to the bottom and delete the line
 `add_theme_support('woocommerce');`
 * **Delete:** in /css/bst.css, scroll to the bottom and delete all the `.woocommerce` styles.
-* **Delete:** in /js/bst.css, scroll to the bottom and delete all that has to do with WooCommerce.
+* **Delete:** in /js/bst.js, scroll to the bottom and delete all that has to do with WooCommerce.
