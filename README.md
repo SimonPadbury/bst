@@ -2,7 +2,7 @@
 
 **BST is a (very) simple WordPress starter theme loaded with Bootstrap 3.**
 
-*Version 1.5*
+*Version 1.6*
 
 
 ##Features
@@ -20,6 +20,7 @@
 * **Optional:** in func/cleanup.php some filters are included (but commented-out, so are inactive) for removing WordPress IDs and classes from the navbar(s). If you would like to use these filters, then simply un-comment them.
 * A few simple jQuery scripts - in `bst.js`, enqueued. Example: **Hovernav** (see below).
 * Custom comment list callback.
+* Optional full-width page template.
 * Easily make this theme your own - if you rename `bst.css` to `yourtheme.css`, and `bst.js` to `yourtheme.js`, and then do a global search-and-replace to rename "bst" to "yourtheme" everywhere in the theme's code, this theme will still work. (You must also modify the comments in `style.css`, and rename the root folder from **bst/** to **yourtheme/**.)
 * [MIT licence](http://opensource.org/licenses/MIT) (open source).
 
