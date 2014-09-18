@@ -9,6 +9,6 @@ Editor stylesheet
 @import url('bootstrap.min.css');
 @import url('bst.css');
 
-body{
+body, body.wp-autoresize {
   padding: 10px;
 }
