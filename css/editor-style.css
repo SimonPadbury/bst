@@ -10,5 +10,5 @@ Editor stylesheet
 @import url('bst.css');
 
 body, body.wp-autoresize {
-  padding: 10px;
+  padding: 10px !important;
 }
