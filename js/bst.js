@@ -10,9 +10,9 @@ $(document).ready(function() {
 	*/
 	var mq = window.matchMedia('(min-width: 768px)');
   if (mq.matches) {
-    $('ul.navbar-nav li').addClass('hovernav');
+    $('ul.navbar-nav > li').addClass('hovernav');
   } else {
-  	$('ul.navbar-nav li').removeClass('hovernav');
+  	$('ul.navbar-nav > li').removeClass('hovernav');
   };
   	/*
 	The addClass/removeClass also needs to be triggered on page resize <=> 768px
@@ -24,9 +24,9 @@ $(document).ready(function() {
   }
 	function WidthChange(mq) {
     if (mq.matches) {
-      $('ul.navbar-nav li').addClass('hovernav');
+      $('ul.navbar-nav > li').addClass('hovernav');
     } else {
-      $('ul.navbar-nav li').removeClass('hovernav');
+      $('ul.navbar-nav > li').removeClass('hovernav');
     }
   };
 	/*
