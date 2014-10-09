@@ -2,7 +2,7 @@
 
 **BST is a (very) simple WordPress starter theme loaded with Bootstrap 3.**
 
-*Version 1.6*
+*Version 1.7*
 
 
 ##Features
@@ -11,9 +11,11 @@
 * CSS, JS, functions and template parts in different folders.
 * **Bootstrap 3.2.0** - CSS and JS enqueued. You can simply swap the default Bootstrap 3 files (included) for a custom made Bootstrap 3, and this theme will still work.
 * **jQuery 1.11.1** called from Google CDN, with a local fallback when offline.
-* **NEW: WooCommerce** plugin support.
-* **NEW:** Choice of two navbar positions (top of screen and/or below site title). Simply delete what you don't need.
+* **WooCommerce** plugin support.
+* **Optional:** Choice of two navbar positions (top of screen and/or below site title). Simply delete what you don't need.
 * A starter CSS theme - `bst.css`, enqueued.
+* **Optional:** HOVERNAV - navbar dropdown on hover. Delete the CSS and JS for this if you don't want it.
+* **NEW: Optional:** MEGANAV - navbar mega-menu whenever there are grand-child links (screen sizes greater than 678px). Delete the CSS and JS for this if you don't want it.
 * Visual editor stylesheet - into which the same Bootsrap 3 and starter CSS theme are preloaded by `@import`, so that **WYSI(M!)WYG** - what you see in the visual editor is (mostly!) what you get at the front end.
 * `Modernizr.js`, `respond.js` and `html5shiv.css` included - enqueued.
 * Clean-up scripts - e.g. removing WordPress-specific stiff grom the <head>. (Do not rely on these for security.)
