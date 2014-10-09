@@ -1,7 +1,8 @@
 /*
-Navbar "hovernav" dropdown menu - this works only for screen sizes larger than phones.
-The Bootstrap CSS is unchanged. If you don't want this, delete this segment of the CSS
-and delete the corresponding segment of bst.js
+HOVERNAV
+A simple addition to the dropdown menu (Bootstrap itself is unchanged). Navbar dropdowns appear on hover.
+This works only for screen sizes larger than phones.
+If you don't want this, delete this segment of the CSS and delete the corresponding segment of bst.js
 */
 @media (min-width: 768px) {
   .navbar-nav .caret {
@@ -27,6 +28,54 @@ and delete the corresponding segment of bst.js
     display: block
   }
 }
+
+/*
+MEGANAV
+A simple addition to the dropdown menu (Bootstrap itself is unchanged). When you add GRAND-CHILD links in the navbar,
+On screens larger than phones, Meganav will transform the dropdown into a mega-menu, with child-links displayed as menu-column heads (in bold).
+If you don't want this, delete this segment of the CSS and delete the corresponding segment of bst.js
+*/
+.mega-menu ul a {
+	color: #666;
+}
+.has-children > a {
+	font-size: 15px;
+	font-weight: bold !important
+}
+@media (max-width: 767px) {
+	.has-children ul {
+		display: block !important;
+		margin-left: 15px
+	}
+}
+@media (min-width: 768px) {
+	.dropdown.mega-menu {
+		position: static;
+	}
+	.mega-menu > .dropdown-menu {
+		left: 0;
+		right: 0;
+		overflow-x: auto
+	}
+	.mega-menu > ul > li {
+	  display:table-cell;
+	}
+	.mega-menu > ul ul {
+		position: relative;
+		display: block !important;
+		border: 0;
+		border-radius: 0;
+		box-shadow: none;
+		padding: 0
+	}
+	.has-children {
+		border-right: 1px solid #e7e7e7
+	}
+	.has-children:last-of-type {
+		border-right: 0
+	}
+}
+
 
 /*
 Max content widths
