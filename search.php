@@ -5,7 +5,7 @@
     
     <div class="col-xs-12 col-sm-8">
       <div id="content" role="main">
-        <h2>Search Results for &ldquo;<?php the_search_query(); ?>&rdquo;</h2>
+        <h2><?php _e('Search Results for', 'bst'); ?> &ldquo;<?php the_search_query(); ?>&rdquo;</h2>
         <hr/>
         <?php if(have_posts()): while(have_posts()): the_post();?>
         <article role="article" id="post_<?php the_ID()?>" <?php post_class()?>>
@@ -18,7 +18,7 @@
         <?php endwhile; ?> 
         <?php else: ?>
         <div class="alert alert-warning">
-          <i class="glyphicon glyphicon-exclamation-sign"></i> Sorry, your search yielded no results.
+          <i class="glyphicon glyphicon-exclamation-sign"></i> <?php _e('Sorry, your search yielded no results.', 'bst'); ?>
         </div>
         <?php endif;?>
       </div><!-- /#content -->
