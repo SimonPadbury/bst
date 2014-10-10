@@ -32,6 +32,10 @@ This theme has been built for use as a starter theme and as a learning aid for p
 
 The navbar has some modifications that make the dropdown menu appear on hover (in `bst.js` plus `bst.css`). *The Bootstrap js and css have not been changed*. You can easily delete the "hovernav" segments of bst.js and bst.css if you don't want them. 
 
+###Meganav
+
+The navbar has some modifications that enable *child links and grandchild links* to be shown in a _megamenu_.
+
 ##Notes on WooCommerce support
 
 * You will need to install the WooCommerce plugin - http://wordpress.org/plugins/woocommerce/
