@@ -64,7 +64,7 @@ Find out more about WooCommerce here: http://www.woothemes.com/woocommerce/
 
 ###What if you don't want WooCommerce support in BST?
 
-Simply delete or remove these things that you won't be needing:
+Simply remove and delete these things that you won't be needing:
 
 * **Remove:** woocommerce.php.
 * **Remove:** /functions/woocommerce-setup.php.
