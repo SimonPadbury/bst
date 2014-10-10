@@ -47,7 +47,7 @@ The navbar has some modifications that enable **child links and grandchild links
 * In the megamenu: child links are displayed horizontally in bold, as heads of columns containing their respective grandchild links.
 * And if the megamenu content is too wide for a grid width (e.g. in medium screen sizes), then the content will scroll horizontally.
 
-You can easily delete the "meganav" segments of bst.js and bst.css if you don't want them. Removing _meganav_ will not affect the functionality of _hovernav_.
+You can easily delete the _meganav_ segments of bst.js and bst.css if you don't want them. Removing _meganav_ will not affect the functionality of _hovernav_.
 
 
 ##Notes on WooCommerce support
