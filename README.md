@@ -30,11 +30,25 @@ This theme has been built for use as a starter theme and as a learning aid for p
 
 ###Hovernav
 
-The navbar has some modifications that make the dropdown menu appear on hover (in `bst.js` plus `bst.css`). *The Bootstrap js and css have not been changed*. You can easily delete the "hovernav" segments of bst.js and bst.css if you don't want them. 
+The navbar has some modifications that make the dropdown menu appear on hover (in `bst.js` plus `bst.css`). *The Bootstrap js and css have not been changed*.
+
+_Hovernav_ only operates for screen sizes < 768px. It doesn't operate on phones, where Bootstrap displays the navbar as a dropdown menu system).
+
+You can easily delete the _hovernav_ segments of bst.js and bst.css if you don't want them. Removing _hovernav_ will not affect the functionality of _meganav_.
 
 ###Meganav
 
-The navbar has some modifications that enable *child links and grandchild links* to be shown in a _megamenu_.
+The navbar has some modifications that enable **child links and grandchild links** to be shown in a **megamenu**  (in `bst.js` plus `bst.css`). 
+
+**Meganav is responsive.** Explanation:
+
+* For screen sizes < 768px, _meganav_ detects those dropdowns containing grandchild links and displays them differently: the child links are set `font-weight: bold` while their corresponding grandchild links are set  `font-weight: normal` and with some left padding.
+* For screen sizes >= 768px (with the navbar in menubar mode), all _dropdowns with child links and grandchild links_ is displayed as a _full-width megamenu_. Meanwhile dropdowns not containing grandchild links are displayed in the normal Bootstrap style.
+* In the megamenu: child links are displayed horizontally in bold, as heads of columns containing their respective grandchild links.
+* And if the megamenu content is too wide for a grid width (e.g. in medium screen sizes), then the content will scroll horizontally.
+
+You can easily delete the "meganav" segments of bst.js and bst.css if you don't want them. Removing _meganav_ will not affect the functionality of _hovernav_.
+
 
 ##Notes on WooCommerce support
 
