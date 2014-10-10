@@ -42,7 +42,7 @@ The navbar has some modifications that enable **child links and grandchild links
 
 **Meganav is responsive.** Explanation:
 
-* For screen sizes < 768px, _meganav_ detects those dropdowns containing grandchild links and displays them differently: the child links are set `font-weight: bold` while their corresponding grandchild links are set  `font-weight: normal` and with some left padding.
+* For screen sizes < 768px, _meganav_ detects those dropdowns containing grandchild links and displays them differently: the child links are set `font-weight: bold` while their corresponding grandchild links are set  `font-weight: normal` and with added left margin.
 * For screen sizes >= 768px (with the navbar in menubar mode), all _dropdowns with child links and grandchild links_ is displayed as a _full-width megamenu_. Meanwhile dropdowns not containing grandchild links are displayed in the normal Bootstrap style.
 * In the megamenu: child links are displayed horizontally in bold, as heads of columns containing their respective grandchild links.
 * And if the megamenu content is too wide for a grid width (e.g. in medium screen sizes), then the content will scroll horizontally.
