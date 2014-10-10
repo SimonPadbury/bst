@@ -1,0 +1,212 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: BST to ru_RU\n"
+"POT-Creation-Date: 2014-10-10 00:04+0600\n"
+"PO-Revision-Date: 2014-10-10 00:19+0600\n"
+"Last-Translator: \n"
+"Language-Team: spoofi <spoofi.lab@gmail.com>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;esc_attr__;esc_attr_e;esc_html__;"
+"esc_html_e\n"
+"X-Poedit-SearchPath-0: ../.\n"
+
+#: .././404.php:9
+msgid "Error"
+msgstr "Ошибка"
+
+#: .././404.php:10
+msgid "The page you were looking for does not exist."
+msgstr "Такой страницы не существует"
+
+#: .././category.php:9
+msgid "Blog Category"
+msgstr "Категория"
+
+#: .././category.php:18 .././index.php:14 .././single.php:14
+msgid "By"
+msgstr "Автор"
+
+#: .././category.php:24 .././index.php:20
+msgid "Continue reading"
+msgstr "Читать дальше"
+
+#: .././category.php:26 .././index.php:22 .././single.php:19
+msgid "Filed under"
+msgstr "Категории"
+
+#: .././category.php:27 .././index.php:23 .././parts/comments.php:19
+#: .././single.php:20
+msgid "Comments"
+msgstr "Комментарии"
+
+#: .././category.php:27 .././index.php:23 .././parts/comments.php:19
+#: .././single.php:20
+msgid "None"
+msgstr "Отсутствуют"
+
+#: .././category.php:33 .././index.php:29
+msgid "Older"
+msgstr "Предыдущая"
+
+#: .././category.php:34 .././index.php:30
+msgid "Newer"
+msgstr "Следующая"
+
+#: .././func/feedback.php:28
+msgid "at"
+msgstr "/"
+
+#: .././func/feedback.php:30
+msgid "Your comment is awaiting moderation."
+msgstr "Ваш комметарий ожидает модерации."
+
+#: .././func/feedback.php:41
+msgid "Edit"
+msgstr "Редактировать"
+
+#: .././func/navbar.php:117
+msgid "Screen-top menu"
+msgstr "Меню вверху экрана"
+
+#: .././func/navbar.php:118
+msgid "Main menu (below site title)"
+msgstr "Основное меню (под названием сайта)"
+
+#: .././func/setup.php:18 .././func/setup.php:19
+msgid "Search"
+msgstr "Поиск"
+
+#: .././func/setup.php:26
+msgid "Read more"
+msgstr "Читать дальше"
+
+#: .././func/widgets.php:9
+msgid "Sidebar"
+msgstr "Сайдбар"
+
+#: .././func/widgets.php:11
+msgid "The sidebar widget area"
+msgstr ""
+
+#: .././func/widgets.php:22
+msgid "Footer"
+msgstr "Подвал"
+
+#: .././func/widgets.php:24
+msgid "The footer widget area"
+msgstr ""
+
+#: .././index.php:20
+msgid "&hellip; "
+msgstr ""
+
+#: .././parts/comments.php:8
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+"Этот пост заблокирован паролем. Введите пароль для просмотра комментариев."
+
+#: .././parts/comments.php:17
+msgid "Feedback"
+msgstr "Обратная связь"
+
+#: .././parts/comments.php:34
+msgid "Be the first to write a comment."
+msgstr "Напишите комметарий первым."
+
+#: .././parts/comments.php:36
+msgid "Comments are closed for this post."
+msgstr "Комментарии для этого поста закрыты."
+
+#: .././parts/comments.php:43
+msgid "Your feedback"
+msgstr "Ваш ответ"
+
+#: .././parts/comments.php:43
+#, php-format
+msgid "Responses to %s"
+msgstr "В ответ %s"
+
+#: .././parts/comments.php:46
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Вы должны <a href=\"%s\">войти</a>, чтобы оставить комментарий."
+
+#: .././parts/comments.php:51
+msgid "Logged in as"
+msgstr "Вы вошли как"
+
+#: .././parts/comments.php:52
+msgid "Log out of this account"
+msgstr "Выйти из этого аккаунта"
+
+#: .././parts/comments.php:52
+msgid "Log out"
+msgstr "Выйти"
+
+#: .././parts/comments.php:56 .././parts/comments.php:57
+msgid "Your name"
+msgstr "Имя"
+
+#: .././parts/comments.php:56
+msgid "(required)"
+msgstr "(обязательно)"
+
+#: .././parts/comments.php:60 .././parts/comments.php:61
+msgid "Your email address"
+msgstr "Email"
+
+#: .././parts/comments.php:60
+msgid "(required, but will not be published)"
+msgstr "(обязательно, но не будет опубликовано)"
+
+#: .././parts/comments.php:64
+msgid "Your website"
+msgstr "Ваш сайт"
+
+#: .././parts/comments.php:64
+msgid "if you have one (not required)"
+msgstr "если имеется (не обязательно)"
+
+#: .././parts/comments.php:65
+msgid "Your website url"
+msgstr "Адрес сайта"
+
+#: .././parts/comments.php:69 .././parts/comments.php:70
+msgid "Your comment"
+msgstr "Ваш комментарий"
+
+#: .././parts/comments.php:72
+msgid "Submit comment"
+msgstr "Отправить"
+
+#: .././parts/woocommerce-setup.php:88
+msgid "View your shopping cart"
+msgstr ""
+
+#: .././parts/woocommerce-setup.php:89
+msgid "Start shopping"
+msgstr ""
+
+#: .././parts/woocommerce-setup.php:93
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: .././search.php:8
+msgid "Search Results for"
+msgstr "Результаты поиска"
+
+#: .././search.php:21
+msgid "Sorry, your search yielded no results."
+msgstr "Извините, поиск не дал результатов"

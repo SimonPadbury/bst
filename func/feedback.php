@@ -25,9 +25,9 @@ function bst_comment($comment, $args, $depth) {
       </div>
       <div>
         <h4 style="margin: 0 0 5px 0"><?php comment_author(); ?></h4>
-        <p class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php printf( __('%1$s at %2$s'), get_comment_date(), get_comment_time()) ?></a></p>
+        <p class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php printf('%1$s ' . __('at', 'bst') . ' %2$s', get_comment_date(), get_comment_time()) ?></a></p>
         <?php if ($comment->comment_approved == '0') : ?>
-          <p><em class="comment-awaiting-moderation"><?php _e('Your comment is awaiting moderation.') ?></em></p>
+          <p><em class="comment-awaiting-moderation"><?php _e('Your comment is awaiting moderation.', 'bst') ?></em></p>
         <?php endif; ?>
       </div>
     </div>
@@ -38,7 +38,7 @@ function bst_comment($comment, $args, $depth) {
       </div>  
     </div>
     <div class="reply">
-      <p class="text-right"><?php edit_comment_link(__('<span class="btn btn-default btn-info">Edit</span>'),' ','' );	?> <?php comment_reply_link(array_merge( $args, array('add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?></p>
+      <p class="text-right"><?php edit_comment_link("<span class='btn btn-default btn-info'>" . __('Edit', 'bst') . "</span>",' ','' );	?> <?php comment_reply_link(array_merge( $args, array('add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?></p>
     </div>
       <?php if ( 'div' != $args['style'] ) : ?>
     </div>

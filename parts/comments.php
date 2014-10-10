@@ -14,9 +14,9 @@ if ( post_password_required() ) { ?>
  
 if (have_comments()) : ?>
 
-<h3>Feedback</h3>
+<h3><?php _e('Feedback', 'bst'); ?></h3>
 <p class="text-muted" style="margin-bottom: 20px;">
- <i class="glyphicon glyphicon-comment"></i>&nbsp; Comments: <?php comments_number('None', '1', '%'); ?>
+ <i class="glyphicon glyphicon-comment"></i>&nbsp; <?php _e('Comments', 'bst');  ?>: <?php comments_number(__('None', 'bst'), '1', '%'); ?>
 </p>
   
 <ol class="commentlist">
@@ -31,9 +31,9 @@ if (have_comments()) : ?>
 <?php
   else :
 	  if (comments_open()) :
-  echo"<p class='alert alert-info'>Be the first to write a comment.</p>";
+  echo "<p class='alert alert-info'>" . __('Be the first to write a comment.', 'bst') . "</p>";
 		else :
-			echo"<p class='alert alert-warning'>Comments are closed for this post.</p>";
+			echo "<p class='alert alert-warning'>" . __('Comments are closed for this post.', 'bst') . "</p>";
 		endif;
 	endif;
 ?>
@@ -48,26 +48,26 @@ if (have_comments()) : ?>
   <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
     <?php if (is_user_logged_in()) : ?>
     <p>
-      <?php printf(__('Logged in as <a href="%s/wp-admin/profile.php">%s</a>.', 'bst'), get_option('siteurl'), $user_identity); ?>
-      <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php __('Log out of this account', 'bst'); ?>"><?php _e('Log out <i class="glyphicon glyphicon-arrow-right"></i>', 'bst'); ?></a>
+      <?php printf(__('Logged in as', 'bst') . ' <a href="%s/wp-admin/profile.php">%s</a>.', get_option('siteurl'), $user_identity); ?>
+      <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php __('Log out of this account', 'bst'); ?>"><?php echo __('Log out', 'bst') . ' <i class="glyphicon glyphicon-arrow-right"></i>'; ?></a>
     </p>
     <?php else : ?>
     <div class="form-group">
-      <label for="author"><?php _e('Your name', 'bst'); if ($req) _e(' <span class="text-muted">(required)</span>', 'bst'); ?></label>
-      <input type="text" class="form-control" name="author" id="author" placeholder="Your name" value="<?php echo esc_attr($comment_author); ?>" <?php if ($req) echo 'aria-required="true"'; ?>>
+      <label for="author"><?php _e('Your name', 'bst'); if ($req) echo ' <span class="text-muted">' . __('(required)', 'bst') . '</span>'; ?></label>
+      <input type="text" class="form-control" name="author" id="author" placeholder="<?php _e('Your name', 'bst'); ?>" value="<?php echo esc_attr($comment_author); ?>" <?php if ($req) echo 'aria-required="true"'; ?>>
     </div>
     <div class="form-group">
-      <label for="email"><?php _e('Your email address', 'bst'); if ($req) _e(' <span class="text-muted">(required, but will not be published)</span>', 'bst'); ?></label>
-      <input type="email" class="form-control" name="email" id="email" placeholder="Your email address" value="<?php echo esc_attr($comment_author_email); ?>" <?php if ($req) echo 'aria-required="true"'; ?>>
+      <label for="email"><?php _e('Your email address', 'bst'); if ($req) echo ' <span class="text-muted">' . _e('(required, but will not be published)', 'bst') . '</span>'; ?></label>
+      <input type="email" class="form-control" name="email" id="email" placeholder="<?php _e('Your email address', 'bst'); ?>" value="<?php echo esc_attr($comment_author_email); ?>" <?php if ($req) echo 'aria-required="true"'; ?>>
     </div>
     <div class="form-group">
-      <label for="url"><?php _e('Your website <span class="text-muted">if you have one (not required)</span>', 'bst'); ?></label>
-      <input type="url" class="form-control" name="url" id="url" placeholder="Your website url" value="<?php echo esc_attr($comment_author_url); ?>">
+      <label for="url"><?php echo __('Your website', 'bst') . ' <span class="text-muted">' . __('if you have one (not required)', 'bst') . '</span>'; ?></label>
+      <input type="url" class="form-control" name="url" id="url" placeholder="<?php _e('Your website url', 'bst'); ?>" value="<?php echo esc_attr($comment_author_url); ?>">
     </div>
     <?php endif; ?>
     <div class="form-group">
       <label for="comment"><?php _e('Your comment', 'bst'); ?></label>
-      <textarea name="comment" class="form-control" id="comment" placeholder="Your comment" rows="8" aria-required="true"></textarea>
+      <textarea name="comment" class="form-control" id="comment" placeholder="<?php _e('Your comment', 'bst'); ?>" rows="8" aria-required="true"></textarea>
     </div>
     <p><input name="submit" class="btn btn-default" type="submit" id="submit" value="<?php _e('Submit comment', 'bst'); ?>"></p>
     <?php comment_id_fields(); ?>
