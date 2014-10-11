@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BST to ru_RU\n"
-"POT-Creation-Date: 2014-10-10 00:04+0600\n"
-"PO-Revision-Date: 2014-10-10 00:19+0600\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2014-10-11 15:47+0600\n"
+"PO-Revision-Date: 2014-10-11 15:47+0600\n"
+"Last-Translator: spoofi <spoofi.lab@gmail.com>\n"
 "Language-Team: spoofi <spoofi.lab@gmail.com>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
@@ -60,47 +60,47 @@ msgstr "Предыдущая"
 msgid "Newer"
 msgstr "Следующая"
 
-#: .././func/feedback.php:28
+#: .././functions/feedback.php:28
 msgid "at"
 msgstr "/"
 
-#: .././func/feedback.php:30
+#: .././functions/feedback.php:30
 msgid "Your comment is awaiting moderation."
-msgstr "Ваш комметарий ожидает модерации."
+msgstr "Ваш комментарий ожидает модерации."
 
-#: .././func/feedback.php:41
+#: .././functions/feedback.php:41
 msgid "Edit"
 msgstr "Редактировать"
 
-#: .././func/navbar.php:117
+#: .././functions/navbar.php:117
 msgid "Screen-top menu"
 msgstr "Меню вверху экрана"
 
-#: .././func/navbar.php:118
+#: .././functions/navbar.php:118
 msgid "Main menu (below site title)"
 msgstr "Основное меню (под названием сайта)"
 
-#: .././func/setup.php:18 .././func/setup.php:19
+#: .././functions/search.php:5 .././functions/search.php:6
 msgid "Search"
 msgstr "Поиск"
 
-#: .././func/setup.php:26
+#: .././functions/setup.php:17
 msgid "Read more"
 msgstr "Читать дальше"
 
-#: .././func/widgets.php:9
+#: .././functions/widgets.php:9
 msgid "Sidebar"
 msgstr "Сайдбар"
 
-#: .././func/widgets.php:11
+#: .././functions/widgets.php:11
 msgid "The sidebar widget area"
 msgstr ""
 
-#: .././func/widgets.php:22
+#: .././functions/widgets.php:22
 msgid "Footer"
 msgstr "Подвал"
 
-#: .././func/widgets.php:24
+#: .././functions/widgets.php:24
 msgid "The footer widget area"
 msgstr ""
 
