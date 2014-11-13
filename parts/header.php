@@ -20,7 +20,7 @@
 /*
 Upper menubar (at screen top)
 =============================
-Delete this whole <nav>...</nav> block if you don't want it, and delete the line in func/navbar.php that looks like this:
+Delete this whole <nav>...</nav> block if you don't want it, and delete the line in functions/navbar.php that looks like this:
 register_nav_menu('upper-bar', __('Screen-top menu'));
 */
 ?>
@@ -65,7 +65,7 @@ register_nav_menu('upper-bar', __('Screen-top menu'));
 /*
 Lower menubar (main menubar, below site title)
 ==============================================
-Delete this whole <nav>...</nav> block if you don't want it, and delete the line in func/navbar.php that looks like this:
+Delete this whole <nav>...</nav> block if you don't want it, and delete the line in functions/navbar.php that looks like this:
 register_nav_menu('lower-bar', __('Main menu (below site title)'));
 */
 ?>
