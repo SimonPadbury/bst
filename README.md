@@ -15,11 +15,11 @@
 * **Optional:** Choice of two navbar positions (top of screen and/or below site title). Simply delete what you don't need.
 * A starter CSS theme - `bst.css`, enqueued.
 * **Optional:** HOVERNAV - navbar dropdown on hover. Delete the CSS and JS for this if you don't want it.
-* **NEW: Optional:** MEGANAV - navbar mega-menu whenever there are grand-child links (screen sizes greater than 678px). Delete the CSS and JS for this if you don't want it.
-* Visual editor stylesheet - into which the same Bootsrap 3 and starter CSS theme are preloaded by `@import`, so that **WYSI(M!)WYG** - what you see in the visual editor is (mostly!) what you get at the front end.
+* **NEW: Optional:** MEGANAV - navbar mega-menu; whenever there are grand-child links (for screen sizes >= 768px). Delete the CSS and JS for this if you don't want it.
+* Visual editor stylesheet - into which the same Bootstrap 3 and starter CSS theme are preloaded by `@import`, so that **WYSI(M!)WYG** - what you see in the visual editor is (mostly!) what you get at the front end.
 * `Modernizr.js`, `respond.js` and `html5shiv.css` included - enqueued.
 * Clean-up scripts - e.g. removing WordPress-specific stiff grom the <head>. (Do not rely on these for security.)
-* **Optional:** in func/cleanup.php some filters are included (but commented-out, so are inactive) for removing WordPress IDs and classes from the navbar(s). If you would like to use these filters, then simply un-comment them.
+* **Optional:** in functions/cleanup.php some filters are included (but commented-out, so are inactive) for removing WordPress IDs and classes from the navbar(s). If you would like to use these filters, then simply un-comment them.
 * A few simple jQuery scripts - in `bst.js`, enqueued. Example: **Hovernav** (see below).
 * Custom comment list callback.
 * **Optional** full-width page template - select it in the WordPress Page Editor **Page Attributes** panel.
@@ -32,20 +32,20 @@ This theme has been built for use as a starter theme and as a learning aid for p
 
 The navbar has some modifications that make the dropdown menu appear on hover (in `bst.js` plus `bst.css`). *The Bootstrap js and css have not been changed*.
 
-_Hovernav_ only operates for screen sizes < 768px. It doesn't operate on phones, where Bootstrap displays the navbar as a dropdown menu system).
+_Hovernav_ only operates for screen sizes >=768px. It doesn't operate on phones, where Bootstrap displays the navbar as a dropdown menu system).
 
 You can easily delete the _hovernav_ segments of bst.js and bst.css if you don't want them. Removing _hovernav_ will not affect the functionality of _meganav_.
 
 ###Meganav
 
-The navbar has some modifications that enable **child links and grandchild links** to be shown in a **megamenu**  (in `bst.js` plus `bst.css`). 
+The navbar has some modifications that enable **child links and grandchild links** to be shown in a **megamenu** (in `bst.js` plus `bst.css`). 
 
 **Meganav is responsive.** Explanation:
 
-* For screen sizes < 768px, _meganav_ detects those dropdowns containing grandchild links and displays them differently: the child links are set `font-weight: bold` while their corresponding grandchild links are set  `font-weight: normal` and with added left margin.
-* For screen sizes >= 768px (with the navbar in menubar mode), all _dropdowns with child links and grandchild links_ is displayed as a _full-width megamenu_. Meanwhile dropdowns not containing grandchild links are displayed in the normal Bootstrap style.
+* For screen sizes < 768px, _meganav_ detects those dropdowns containing grandchild links and displays them differently: the child links are set `font-weight: bold` while their corresponding grandchild links are set `font-weight: normal` and with added left margin.
+* For screen sizes >= 768px (with the navbar in menubar mode), all _dropdowns with child links and grandchild links_ are displayed as a _full-width megamenu_. Meanwhile, dropdowns not containing grandchild links are displayed in the normal Bootstrap style.
 * In the megamenu: child links are displayed horizontally in bold, as heads of columns containing their respective grandchild links.
-* And if the megamenu content is too wide for a grid width (e.g. in medium screen sizes), then the content will scroll horizontally.
+* If the megamenu content is too wide for a grid width (e.g. in medium screen sizes), then the content will scroll horizontally.
 
 You can easily delete the _meganav_ segments of bst.js and bst.css if you don't want them. Removing _meganav_ will not affect the functionality of _hovernav_.
 
@@ -56,7 +56,7 @@ You can easily delete the _meganav_ segments of bst.js and bst.css if you don't 
 * I have included the *minimum* additions to BST to make WooCommerce work (this is a starter theme). It will work fine with these minimum additions, but you can add more style and improve the layout.
 * WooCommerce uses WooCommerce-styled buttons, icons, etc. in its shop, cart, checkout etc. - these are not the same as the Bootstrap buttons, icons etc. I have not replaced the WooCommerce buttons with Bootstrap buttons, because that would mean that you have no control over the appearance of these buttons from within the WooCommerce plugin settings.
 * However I have applied Bootstrap styling to the cart and checkout forms, using jQuery insertion of Bootstrap CSS classes.
-* You will need to add a "Shop" link, e.g. to your primary menu
+* You will need to add a "Shop" link, e.g. to your primary menu.
 * You will need to add some WooCommerce Widgets to the sidebar (at minimum, WooCommerce Cart and WooCommerce Categories)
 * And, of course, you will need to add salable items to your shop, and set up your payment gateway.
 
@@ -68,7 +68,7 @@ Simply remove and delete these things that you won't be needing:
 
 * **Remove:** woocommerce.php.
 * **Remove:** /functions/woocommerce-setup.php.
-* **Delete:** in /func/setup.php, scroll to the bottom and delete the line
+* **Delete:** in /functions/setup.php, scroll to the bottom and delete the line
 `add_theme_support('woocommerce');`.
 * **Delete:** in /css/bst.css, scroll to the bottom and delete all the `.woocommerce` styles.
 * **Delete:** in /js/bst.js, scroll to the bottom and delete all that has to do with WooCommerce.
