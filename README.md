@@ -2,14 +2,14 @@
 
 **BST is a simple WordPress starter theme loaded with Bootstrap 3.**
 
-*Version 1.7*
+*Version 1.8*
 
 
 ##Features
 
 * *Simple, intuitive, clean code.*
 * CSS, JS, functions and template parts in different folders.
-* **Bootstrap 3.2.0** - CSS and JS enqueued. You can simply swap the default Bootstrap 3 files (included) for a custom made Bootstrap 3, and this theme will still work.
+* **Bootstrap 3.3.1** - CSS and JS enqueued. You can simply swap the default Bootstrap 3 files (included) for a custom made Bootstrap 3, and this theme will still work.
 * **jQuery 1.11.1** called from Google CDN, with a local fallback when offline.
 * **WooCommerce** plugin support.
 * **Optional:** Choice of two navbar positions (top of screen and/or below site title). Simply delete what you don't need.
