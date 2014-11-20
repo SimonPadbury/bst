@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $(".commentlist li").addClass("panel panel-default");
+	$(".commentlist li").addClass("panel panel-default");
 	$(".comment-reply-link").addClass("btn btn-default");
 
   	/*
@@ -17,11 +17,11 @@ $(document).ready(function() {
 	};
   	// The addClass/removeClass also needs to be triggered on page resize <=> 768px
 	function WidthChange(mq) {
-	  if (mq.matches) {
-	    $('ul.navbar-nav > li').addClass('hovernav');
-	  } else {
-	    $('ul.navbar-nav > li').removeClass('hovernav');
-	  }
+		if (mq.matches) {
+			$('ul.navbar-nav > li').addClass('hovernav');
+		} else {
+			$('ul.navbar-nav > li').removeClass('hovernav');
+		}
 	};
 	if (matchMedia) {
 		var mq = window.matchMedia('(min-width: 768px)');
