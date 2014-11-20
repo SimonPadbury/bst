@@ -8,24 +8,32 @@
 ##Features
 
 * *Simple, intuitive, clean code.*
-* CSS, JS, functions and template parts in different folders.
+* CSS, JS, functions and template parts are organized into different folders.
 * **Bootstrap 3.3.1** - CSS and JS enqueued. You can simply swap the default Bootstrap 3 files (included) for a custom made Bootstrap 3, and this theme will still work.
-* **jQuery 1.11.1** called from Google CDN, with a local fallback when offline.
-* **WooCommerce** plugin support.
-* **Optional:** Choice of two navbar positions (top of screen and/or below site title). Simply delete what you don't need. You can't have both, because that qill give you a TWO hamburgers (and two collapsed navbars) on small-screen devices.
-* A starter CSS theme - `bst.css`, enqueued.
-* **Optional:** HOVERNAV - navbar dropdown on hover. Delete the CSS and JS for this if you don't want it.
-* **Optional:** MEGANAV - navbar mega-menu; whenever there are grand-child links (for screen sizes >= 768px). Delete the CSS and JS for this if you don't want it.
-* **Optional:** Load the Google CDN jQuery with a local fallback. Some like this, some don't. If it causes your site problems, remove this stuff from `functions/enqueues.php` and instead enqueue WordPress's onboard jQuery. (Read more about this on functions/enqueues.php).
+* **jQuery 1.11.1** either using the hosted Google CDN or WordPress's onboard jQuery. You decide (see below).
 * Visual editor stylesheet - into which the same Bootstrap 3 and starter CSS theme are preloaded by `@import`, so that **WYSI(M!)WYG** - what you see in the visual editor is (mostly!) what you get at the front end.
 * `Modernizr.js`, `respond.js` and `html5shiv.css` included - enqueued.
 * Clean-up scripts - e.g. removing WordPress-specific stiff grom the <head>. (Do not rely on these for security.)
-* **Optional:** in functions/cleanup.php some filters are included (but commented-out, so are inactive) for removing WordPress IDs and classes from the navbar(s). If you would like to use these filters, then simply un-comment them.
+* [MIT licence](http://opensource.org/licenses/MIT) (open source).
+
+###Optional Features
+
+* In `functions/enqueues.php` is some code that calls jQuery from Google CDN when this theme is on a live website, or alternatively calls a local fallback when offline (i.e. from your WordPress installation's own jQuery). _Some developers like to depend on the Google CDN; some don't._ If this causes your site problems or if you prefer not to depend on the Google CDN, you can simply remove this stuff from functions/enqueues.php and instead simply enqueue WordPress's onboard jQuery. Also some prefer to call `http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js` whils some prefer `//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js` - you can choose. (Read more about this in the file functions/enqueues.php). 
+* **WooCommerce** plugin support. (You will also need the [WooCommerce plugin] (http://wordpress.org/plugins/woocommerce/)). _Delete the CSS and JS for this if you don't want it._
+* Choice of two navbar positions (top of screen and/or below site title). _Simply delete what you don't need._ **You can't have both** because that will give you a two hamburgers (and two collapsed navbars) stacked on small-screen devices.
+* A starter CSS theme - `bst.css`, enqueued. (Don't put your own styles in `style.css`.)
+* **Hovernav** - navbar dropdown on hover. _Delete the CSS and JS for this if you don't want it._
+* **Meganav** - navbar mega-menu, which automatically works whenever there are grand-child links (for screen sizes >= 768px). _Delete the CSS and JS for this if you don't want it._
+* In `functions/cleanup.php` there are some filters are included (but commented-out, so are inactive) for removing WordPress IDs and classes from the navbar(s). If you would like to use these filters, then simply un-comment them.
 * A few simple jQuery scripts - in `bst.js`, enqueued. Example: **Hovernav** (see below).
 * Custom comment list callback.
-* **Optional** full-width page template - select it in the WordPress Page Editor **Page Attributes** panel.
-* Easily make this theme your own - if you rename `bst.css` to `yourtheme.css`, and `bst.js` to `yourtheme.js`, and then do a global search-and-replace to rename "bst" to "yourtheme" everywhere in the theme's code, this theme will still work. (You must also modify the comments in `style.css`, and rename the root folder from **bst/** to **yourtheme/**.)
-* [MIT licence](http://opensource.org/licenses/MIT) (open source).
+* A full-width page template - select it in the WordPress Page Editor **Page Attributes** panel.
+
+
+###Easily make this theme your own
+
+If you rename `bst.css` to `yourtheme.css`, and `bst.js` to `yourtheme.js`, and then do a global search-and-replace to rename "bst" to "yourtheme" everywhere in the theme's code, this theme will still work. (You must also modify the comments in `style.css`, and rename the root folder from **bst/** to **yourtheme/**.)
+
 
 This theme has been built for use as a starter theme and as a learning aid for people who wish to get into WordPress theme design.
 
