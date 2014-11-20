@@ -204,7 +204,8 @@ ol.commentlist li ul {
 }
 
 /*
-Woocommerce re-styling
+WOOCOMMERCE - re-styling
+If you don't want this, delete this segment of the CSS and delete the corresponding segment of bst.js
 */
 
 .woocommerce a:focus {
@@ -223,4 +224,100 @@ Woocommerce re-styling
 .woocommerce-page .woocommerce-info:before,
 .woocommerce-page .woocommerce-message:before {
   padding-top: 0
+}
+.woocommerce #content input.button, 
+.woocommerce #respond input#submit, 
+.woocommerce a.button, 
+.woocommerce button.button, 
+.woocommerce input.button, 
+.woocommerce-page #content input.button, 
+.woocommerce-page #respond input#submit, 
+.woocommerce-page a.button, 
+.woocommerce-page button.button, 
+.woocommerce-page input.button {
+	/* From .btn */
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-moz-user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	/* From .btn-primary */
+	color: #FFF;
+	background: #337AB7;
+	border-color: #2E6DA4;
+	/* Extra fixes */ 
+	text-shadow: none;
+	box-shadow: none;
+}
+.woocommerce #content input.button:hover, 
+.woocommerce #respond input#submit:hover, 
+.woocommerce a.button:hover, 
+.woocommerce button.button:hover, 
+.woocommerce input.button:hover, 
+.woocommerce-page #content input.button:hover, 
+.woocommerce-page #respond input#submit:hover, 
+.woocommerce-page a.button:hover, 
+.woocommerce-page button.button:hover, 
+.woocommerce-page input.button:hover {
+	/* From .btn-primary:hover */
+	color: #FFF;
+	background: #286090;
+	border-color: #204D74;
+}
+.woocommerce #content input.button.alt, 
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt, 
+.woocommerce button.button.alt, 
+.woocommerce input.button.alt, 
+.woocommerce-page #content input.button.alt, 
+.woocommerce-page #respond input#submit.alt, 
+.woocommerce-page a.button.alt, 
+.woocommerce-page button.button.alt, 
+.woocommerce-page input.button.alt {
+	/* From .btn */
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-moz-user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	/* From .btn-success */
+	color: #FFF;
+	background-color: #5CB85C;
+	border-color: #4CAE4C;
+	/* Extra fixes */
+	text-shadow: none;
+	box-shadow: none;
+}
+.woocommerce #content input.button.alt:hover, 
+.woocommerce #respond input#submit.alt:hover, 
+.woocommerce a.button.alt:hover, 
+.woocommerce button.button.alt:hover, 
+.woocommerce input.button.alt:hover, 
+.woocommerce-page #content input.button.alt:hover, 
+.woocommerce-page #respond input#submit.alt:hover, 
+.woocommerce-page a.button.alt:hover, 
+.woocommerce-page button.button.alt:hover, 
+.woocommerce-page input.button.alt:hover {
+	/* From .btn-success:hover */
+	color: #FFF;
+	background-color: #449D44;
+	border-color: #398439;
 }
