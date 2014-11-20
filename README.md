@@ -13,9 +13,9 @@ This theme has been built for use as a starter theme and as a learning aid for p
 * CSS, JS, functions and template parts are organized into different folders.
 * **Bootstrap 3.3.1** - CSS and JS enqueued. You can simply swap the default Bootstrap 3 files (included) for a custom made Bootstrap 3, and this theme will still work.
 * **jQuery 1.11.1** either using the hosted Google CDN or WordPress's onboard jQuery. You decide (see below).
-* Visual editor stylesheet - into which the same Bootstrap 3 and starter CSS theme are preloaded by `@import`, so that
 * A starter CSS theme - `bst.css`, enqueued. (**Don't** put your own styles in `style.css`.)
-* **WYSI(M!)WYG** - what you see in the visual editor is (mostly!) what you get at the front end.
+* Visual editor stylesheet - into which the same Bootstrap 3 and starter CSS theme are preloaded by `@import`, so that
+**WYSI(M!)WYG** - what you see in the visual editor is (mostly!) what you get at the front end.
 * `Modernizr.js`, `respond.js` and `html5shiv.css` included - enqueued.
 * [MIT licence](http://opensource.org/licenses/MIT) (open source).
 
