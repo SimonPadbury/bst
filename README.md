@@ -6,7 +6,6 @@
 
 This theme has been built for use as a starter theme and as a learning aid for people who wish to get into WordPress theme design.
 
----
 
 ##Features
 
@@ -19,7 +18,7 @@ This theme has been built for use as a starter theme and as a learning aid for p
 * Clean-up scripts - e.g. removing WordPress-specific stiff grom the <head>. (Do not rely on these for security.)
 * [MIT licence](http://opensource.org/licenses/MIT) (open source).
 
-###Optional Features
+##Optional Features
 
 * In `functions/enqueues.php` is some code that calls jQuery from Google CDN when this theme is on a live website, or alternatively calls a local fallback when offline (i.e. from your WordPress installation's own jQuery). _Some developers like to depend on the Google CDN; some don't._ If this causes your site problems or if you prefer not to depend on the Google CDN, you can simply remove this stuff from functions/enqueues.php and instead simply enqueue WordPress's onboard jQuery. Also some prefer to call `http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js` whils some prefer `//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js` - you can choose. (Read more about this in the file functions/enqueues.php). 
 * **WooCommerce** plugin support. (You will also need the [WooCommerce plugin] (http://wordpress.org/plugins/woocommerce/)). _Delete the CSS and JS for this if you don't want it._
@@ -33,7 +32,7 @@ This theme has been built for use as a starter theme and as a learning aid for p
 * A full-width page template - select it in the WordPress Page Editor **Page Attributes** panel.
 
 
-###Hovernav
+##Hovernav
 
 The navbar has some modifications that make the dropdown menu appear on hover (in `bst.js` plus `bst.css`). *The Bootstrap js and css have not been changed*.
 
@@ -41,7 +40,7 @@ _Hovernav_ only operates for screen sizes >=768px. It doesn't operate on phones,
 
 You can easily delete the _hovernav_ segments of bst.js and bst.css if you don't want them. Removing _hovernav_ will not affect the functionality of _meganav_.
 
-###Meganav
+##Meganav
 
 The navbar has some modifications that enable **child links and grandchild links** to be shown in a **megamenu** (in `bst.js` plus `bst.css`). 
 
@@ -66,7 +65,7 @@ You can easily delete the _meganav_ segments of bst.js and bst.css if you don't 
 Find out more about WooCommerce here: http://www.woothemes.com/woocommerce/
 
 
-###What if you don't want WooCommerce support?
+####What if you don't want WooCommerce support?
 
 Simply remove and delete these things that you won't be needing - and everything else will just work fine:
 
@@ -77,10 +76,10 @@ Simply remove and delete these things that you won't be needing - and everything
 * **Delete:** in /css/bst.css, scroll to the bottom and delete all style rules that have to do with WooCommerce.
 * **Delete:** in /js/bst.js, scroll to the bottom and delete all jQuery code that has to do with WooCommerce.
 
----
+
 
 ##Easily make this theme your own
 
-* Rename `bst.css` to `yourtheme.css`.
-* Rename `bst.js` to `yourtheme.js`.
-* Do a global search-and-replace ("Replace in files...") to rename "bst" to "yourtheme" **everywhere** in the theme's code, then this theme will still work. (You must also modify the comments in `style.css`, and rename the root folder from `bst/` to `yourtheme/`.)
+* **Rename** `bst.css` to `yourtheme.css`.
+* **Rename** `bst.js` to `yourtheme.js`.
+* **Do a global search-and-replace** ("Replace in files...") to rename "bst" to "yourtheme" **everywhere** in the theme's code, then this theme will still work. (You must also modify the comments in `style.css`, and rename the root folder from `bst/` to `yourtheme/`.)
