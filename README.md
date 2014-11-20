@@ -19,18 +19,18 @@ This theme has been built for use as a starter theme and as a learning aid for p
 
 ##Optional Features
 
-* The [BOOTSTRAP THEME](http://getbootstrap.com/examples/theme/) stylesheet is included, to show you how to include int in BST (see `functions/enqueues.php`). If you are getting bored with [flat UI design](http://en.wikipedia.org/wiki/Flat_UI_Design) already, keep it, and begin your own website design from there. Alternatively, you can simply remove the enqueues. (And if you are using WooCommerce (see below), you will want to remove some BOOTSTRAP THEME segments from the 'Bootstrapped' WooCommerce .button style rules at the bottom of `bst.css`.
+* The [BOOTSTRAP THEME](http://getbootstrap.com/examples/theme/) stylesheet is included, to show you how to include int in BST (see `functions/enqueues.php`). If you are getting bored with [flat UI design](http://en.wikipedia.org/wiki/Flat_UI_Design) already, keep it, and begin your own website design from there. Alternatively, you can simply remove it by deleting its enqueue. (And if you are using WooCommerce (see below), you will want to delete some BOOTSTRAP THEME segments from the 'Bootstrapped' WooCommerce `.button` style rules at the bottom of `bst.css`.
 * In `functions/enqueues.php` there is a block of some code that calls jQuery from Google CDN when this theme is on a live website, or alternatively calls a local fallback when offline (i.e. from your WordPress installation's own jQuery). _Some developers like to depend on the Google CDN; some don't._ If this causes your site problems (e.g. goes slow) or if you prefer not to depend on the Google CDN, you can simply remove this stuff from functions/enqueues.php and instead then enqueue WordPress's onboard jQuery (see the comments in `finctions/enqueues.php` for more explanation). 
 * Also, some developers prefer to call `http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js` while some prefer `//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js` - you can choose. (Read more about this in the file functions/enqueues.php). 
 * `Modernizr.js`, `respond.js` and `html5shiv.css` included - enqueued. (Keep what you want; delete what you don't.)
 * **WooCommerce** plugin support. (You will also need the [WooCommerce plugin] (http://wordpress.org/plugins/woocommerce/)). _Delete the CSS and JS for this if you don't want it._
-* Choice of two navbar positions (top of screen and/or below site title). _Simply delete what you don't need._ **You can't have both** because that will give you a two hamburgers (and two collapsed navbars) stacked on small-screen devices.
+* Choice of two navbar positions (top of screen and/or below site title). _Simply delete what you don't need._ **You can't have both** navbars because that will give you a two hamburgers (and two collapsed navbars) on small-screen devices.
 * **Hovernav** - navbar dropdown on hover. _Delete the CSS and JS for this if you don't want it._
 * **Meganav** - navbar mega-menu, which automatically works whenever there are grand-child links (for screen sizes >= 768px). _Delete the CSS and JS for this if you don't want it._
 * In `functions/cleanup.php` there are some filters are included (but commented-out, so are inactive) for removing WordPress IDs and classes from the navbar(s). If you would like to use these filters, then simply un-comment them.
 * A few simple jQuery scripts - in `bst.js`, enqueued. Example: **Hovernav** (see below).
 * Custom comment list callback.
-* A full-width page template - you can select it in the WordPress Page Editor **Page Attributes** panel.
+* **A full-width page template** - you can select it in the WordPress Page Editor **Page Attributes** panel.
 
 
 ##Hovernav
@@ -45,7 +45,7 @@ You can easily delete the _hovernav_ segments of bst.js and bst.css if you don't
 
 The navbar has some modifications that enable **child links and grandchild links** to be shown in a **megamenu** (in `bst.js` plus `bst.css`). 
 
-**Meganav is responsive.** Explanation:
+Meganav is **responsive**. Explanation:
 
 * For screen sizes < 768px, _meganav_ detects those dropdowns containing grandchild links and displays them differently: the child links are set `font-weight: bold` while their corresponding grandchild links are set `font-weight: normal` and with added left margin.
 * For screen sizes >= 768px (with the navbar in menubar mode), all _dropdowns with child links and grandchild links_ are displayed as a _full-width megamenu_. Meanwhile, dropdowns not containing grandchild links are displayed in the normal Bootstrap style.
@@ -57,13 +57,13 @@ You can easily delete the _meganav_ segments of bst.js and bst.css if you don't 
 
 ##WooCommerce support
 
-* You will need to install the WooCommerce plugin - http://wordpress.org/plugins/woocommerce/
-* **NEW: Improvements in version 1.9:** Now with lots of re-styling of WooCommerce as Bootstrap (see `bst.js` and `bst.css`). Note: the WooCommerce stylesheet has not been 'put out of gear'. Therefore some of the basic WooCommerce styling is implemented while others styles (e.g. buttons, form elements, message and information panels) have had their styles _over-ridden_ by Bootstrap styles. This has been accomplished mostly by using jQuery to swap WooCommerce classes for Bootstrap classes; however, some jQuery-added inline styles and some stylesheet-added button styles have also been used. (These are all easy to remove by deleting if you don't want them - see below.)
+* You will need to install the [WooCommerce plugin](http://wordpress.org/plugins/woocommerce/).
+* **Improvements since version 1.9:** Now with lots of re-styling of WooCommerce as Bootstrap (see `bst.js` and `bst.css`). Note: the WooCommerce stylesheet has not been 'put out of gear'. Therefore some of the basic WooCommerce styling is implemented while others styles (e.g. buttons, form elements, message and information panels) have had their styles _over-ridden_ by Bootstrap styles. This has been accomplished mostly by using jQuery to swap WooCommerce classes for Bootstrap classes; however, some jQuery-added inline styles and some stylesheet-added button styles have also been used. (These are all easy to remove by deleting if you don't want them - see below.)
 * Your website will need hyperlinks to "Shop", "My Account", "Cart" and "Checkout" e.g. in your primary menu.
 * You will need to add some WooCommerce Widgets to the sidebar (at minimum, WooCommerce Cart and WooCommerce Categories)
 * And, of course, you will need to add salable items to your shop, and set up your payment gateway.
 
-Find out more about WooCommerce here: http://www.woothemes.com/woocommerce/
+Find out more about WooCommerce here: [http://www.woothemes.com/woocommerce/](http://www.woothemes.com/woocommerce/).
 
 
 ####What if you don't want WooCommerce support?
