@@ -14,9 +14,7 @@ This theme has been built for use as a starter theme and as a learning aid for p
 * **Bootstrap 3.3.1** - CSS and JS enqueued. You can simply swap the default Bootstrap 3 files (included) for a custom made Bootstrap 3, and this theme will still work.
 * **jQuery 1.11.1** either using the hosted Google CDN or WordPress's onboard jQuery. You decide (see below).
 * A starter CSS theme - `bst.css`, enqueued. (**Don't** put your own styles in `style.css`.)
-* Visual editor stylesheet - into which the same Bootstrap 3 and starter CSS theme are preloaded by `@import`, so that
-**WYSI(M!)WYG** - what you see in the visual editor is (mostly!) what you get at the front end.
-* `Modernizr.js`, `respond.js` and `html5shiv.css` included - enqueued.
+* Visual editor stylesheet - into which the same Bootstrap 3 and starter CSS theme are preloaded by `@import`, so that what you see in the visual editor is (mostly!) what you get at the front end (WYSI(M!)WYG).
 * [MIT licence](http://opensource.org/licenses/MIT) (open source).
 
 ##Optional Features
@@ -24,6 +22,7 @@ This theme has been built for use as a starter theme and as a learning aid for p
 * The [BOOTSTRAP THEME](http://getbootstrap.com/examples/theme/) stylesheet is included, to show you how to include int in BST (see `functions/enqueues.php`). If you are getting bored with [flat UI design](http://en.wikipedia.org/wiki/Flat_UI_Design) already, keep it, and begin your own website design from there. Alternatively, you can simply remove the enqueues. (And if you are using WooCommerce (see below), you will want to remove some BOOTSTRAP THEME segments from the 'Bootstrapped' WooCommerce .button style rules at the bottom of `bst.css`.
 * In `functions/enqueues.php` there is a block of some code that calls jQuery from Google CDN when this theme is on a live website, or alternatively calls a local fallback when offline (i.e. from your WordPress installation's own jQuery). _Some developers like to depend on the Google CDN; some don't._ If this causes your site problems (e.g. goes slow) or if you prefer not to depend on the Google CDN, you can simply remove this stuff from functions/enqueues.php and instead then enqueue WordPress's onboard jQuery (see the comments in `finctions/enqueues.php` for more explanation). 
 * Also, some developers prefer to call `http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js` while some prefer `//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js` - you can choose. (Read more about this in the file functions/enqueues.php). 
+* `Modernizr.js`, `respond.js` and `html5shiv.css` included - enqueued. (Keep what you want; delete what you don't.)
 * **WooCommerce** plugin support. (You will also need the [WooCommerce plugin] (http://wordpress.org/plugins/woocommerce/)). _Delete the CSS and JS for this if you don't want it._
 * Choice of two navbar positions (top of screen and/or below site title). _Simply delete what you don't need._ **You can't have both** because that will give you a two hamburgers (and two collapsed navbars) stacked on small-screen devices.
 * **Hovernav** - navbar dropdown on hover. _Delete the CSS and JS for this if you don't want it._
