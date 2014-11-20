@@ -4,6 +4,9 @@
 
 *Version 1.9*
 
+This theme has been built for use as a starter theme and as a learning aid for people who wish to get into WordPress theme design.
+
+---
 
 ##Features
 
@@ -29,13 +32,6 @@
 * Custom comment list callback.
 * A full-width page template - select it in the WordPress Page Editor **Page Attributes** panel.
 
-
-###Easily make this theme your own
-
-If you rename `bst.css` to `yourtheme.css`, and `bst.js` to `yourtheme.js`, and then do a global search-and-replace to rename "bst" to "yourtheme" everywhere in the theme's code, this theme will still work. (You must also modify the comments in `style.css`, and rename the root folder from **bst/** to **yourtheme/**.)
-
-
-This theme has been built for use as a starter theme and as a learning aid for people who wish to get into WordPress theme design.
 
 ###Hovernav
 
@@ -80,3 +76,11 @@ Simply remove and delete these things that you won't be needing - and everything
 `add_theme_support('woocommerce');`.
 * **Delete:** in /css/bst.css, scroll to the bottom and delete all style rules that have to do with WooCommerce.
 * **Delete:** in /js/bst.js, scroll to the bottom and delete all jQuery code that has to do with WooCommerce.
+
+---
+
+##Easily make this theme your own
+
+* Rename `bst.css` to `yourtheme.css`.
+* Rename `bst.js` to `yourtheme.js`.
+* Do a global search-and-replace ("Replace in files...") to rename "bst" to "yourtheme" **everywhere** in the theme's code, then this theme will still work. (You must also modify the comments in `style.css`, and rename the root folder from `bst/` to `yourtheme/`.)
