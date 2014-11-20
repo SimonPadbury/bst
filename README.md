@@ -81,6 +81,10 @@ Simply remove and delete these things that you won't be needing - and everything
 
 ##Easily make this theme your own
 
+* **Rename** the root folder from `bst/` to `yourtheme/`.
 * **Rename** `bst.css` to `yourtheme.css`.
 * **Rename** `bst.js` to `yourtheme.js`.
-* **Do a global search-and-replace** ("Replace in files...") to rename "bst" to "yourtheme" **everywhere** in the theme's code, then this theme will still work. (You must also modify the comments in `style.css`, and rename the root folder from `bst/` to `yourtheme/`.)
+* **Do a global search-and-replace** ("Replace in files...") to rename "bst" to "yourtheme" **everywhere** in the theme's code.
+* **Modify** the comments in `style.css`,
+
+Do all that correctly, and this WordPress theme will still work! 
