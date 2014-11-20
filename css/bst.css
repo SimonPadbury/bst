@@ -235,7 +235,7 @@ If you don't want this, delete this segment of the CSS and delete the correspond
 .woocommerce-page a.button, 
 .woocommerce-page button.button, 
 .woocommerce-page input.button {
-	/* From .btn */
+	/* .btn */
 	display: inline-block;
 	padding: 6px 12px;
 	margin-bottom: 0px;
@@ -250,13 +250,20 @@ If you don't want this, delete this segment of the CSS and delete the correspond
 	background-image: none;
 	border: 1px solid transparent;
 	border-radius: 4px;
-	/* From .btn-primary */
+	/* .btn-primary */
 	color: #FFF;
 	background: #337AB7;
 	border-color: #2E6DA4;
+	/* BOOTSTRAP THEME .btn-primary */
+	background-image: linear-gradient(to bottom, #337AB7 0px, #265A88 100%);
+	background-repeat: repeat-x;
+	border-color: #245580;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15) inset, 0px 1px 1px rgba(0, 0, 0, 0.075);
 	/* Extra fixes */ 
 	text-shadow: none;
-	box-shadow: none;
+	/* box-shadow: none; */
+	/* Un-comment the line above if you are not using the BOOTSTRAP THEME. */
 }
 .woocommerce #content input.button:hover, 
 .woocommerce #respond input#submit:hover, 
@@ -268,10 +275,13 @@ If you don't want this, delete this segment of the CSS and delete the correspond
 .woocommerce-page a.button:hover, 
 .woocommerce-page button.button:hover, 
 .woocommerce-page input.button:hover {
-	/* From .btn-primary:hover */
+	/* .btn-primary:hover */
 	color: #FFF;
 	background: #286090;
 	border-color: #204D74;
+	/* BOOTSTRAP THEME .btn-primary:hover */
+	background-color: #265A88;
+	background-position: 0px -15px;
 }
 .woocommerce #content input.button.alt, 
 .woocommerce #respond input#submit.alt, 
@@ -283,7 +293,7 @@ If you don't want this, delete this segment of the CSS and delete the correspond
 .woocommerce-page a.button.alt, 
 .woocommerce-page button.button.alt, 
 .woocommerce-page input.button.alt {
-	/* From .btn */
+	/* .btn */
 	display: inline-block;
 	padding: 6px 12px;
 	margin-bottom: 0px;
@@ -298,13 +308,19 @@ If you don't want this, delete this segment of the CSS and delete the correspond
 	background-image: none;
 	border: 1px solid transparent;
 	border-radius: 4px;
-	/* From .btn-success */
+	/* .btn-success */
 	color: #FFF;
 	background-color: #5CB85C;
 	border-color: #4CAE4C;
+	/* BOOTSTRAP THEME .btn-success */
+	background-image: linear-gradient(to bottom, #5CB85C 0px, #419641 100%);
+	background-repeat: repeat-x;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15) inset, 0px 1px 1px rgba(0, 0, 0, 0.075);
 	/* Extra fixes */
 	text-shadow: none;
-	box-shadow: none;
+	/* box-shadow: none; */
+	/* Un-comment the line above if you are not using the BOOTSTRAP THEME. */
 }
 .woocommerce #content input.button.alt:hover, 
 .woocommerce #respond input#submit.alt:hover, 
@@ -316,8 +332,52 @@ If you don't want this, delete this segment of the CSS and delete the correspond
 .woocommerce-page a.button.alt:hover, 
 .woocommerce-page button.button.alt:hover, 
 .woocommerce-page input.button.alt:hover {
-	/* From .btn-success:hover */
+	/* Extras fixes */
+	background: none;
+	text-shadow: none;
+	/* .btn-success:hover */
 	color: #FFF;
 	background-color: #449D44;
 	border-color: #398439;
+	/* BOOTSTRAP THEME .btn-success:hover */
+	background-color: #419641;
+	background-position: 0px -15px;
+}
+
+
+.woocommerce .woocommerce-error,
+.woocommerce-page .woocommerce-error {
+	/* Extra fixes */
+	padding: 0;
+	margin: 0;
+	position: relative;
+	border-top: none;
+	background: none;
+	text-shadow: none;
+	list-style: outside none none !important;
+	width: auto;
+	/* box-shadow: none; */
+	/* Un-comment the line above if you are not using the BOOTSTRAP THEME. */
+	/* .alert */
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	/* .alert-danger */
+	color: #A94442;
+	background-color: #F2DEDE;
+	border-color: #EBCCD1;
+	/* BOOTSTRAP THEME .alert */
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25) inset, 0px 1px 2px rgba(0, 0, 0, 0.05);
+	/* BOOTSTRAP THEME .alert */
+	background-image: linear-gradient(to bottom, #F2DEDE 0px, #E7C3C3 100%);
+	background-repeat: repeat-x;
+	border-color: #DCA7A7;
+}
+.woocommerce .woocommerce-error:after, 
+.woocommerce .woocommerce-error:before, 
+.woocommerce-page .woocommerce-error:after, 
+.woocommerce-page .woocommerce-error:before {
+	display: none;
 }
