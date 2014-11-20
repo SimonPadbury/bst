@@ -15,7 +15,7 @@
 * **Optional:** Choice of two navbar positions (top of screen and/or below site title). Simply delete what you don't need.
 * A starter CSS theme - `bst.css`, enqueued.
 * **Optional:** HOVERNAV - navbar dropdown on hover. Delete the CSS and JS for this if you don't want it.
-* **NEW: Optional:** MEGANAV - navbar mega-menu; whenever there are grand-child links (for screen sizes >= 768px). Delete the CSS and JS for this if you don't want it.
+* **Optional:** MEGANAV - navbar mega-menu; whenever there are grand-child links (for screen sizes >= 768px). Delete the CSS and JS for this if you don't want it.
 * Visual editor stylesheet - into which the same Bootstrap 3 and starter CSS theme are preloaded by `@import`, so that **WYSI(M!)WYG** - what you see in the visual editor is (mostly!) what you get at the front end.
 * `Modernizr.js`, `respond.js` and `html5shiv.css` included - enqueued.
 * Clean-up scripts - e.g. removing WordPress-specific stiff grom the <head>. (Do not rely on these for security.)
@@ -53,7 +53,7 @@ You can easily delete the _meganav_ segments of bst.js and bst.css if you don't 
 ##Notes on WooCommerce support
 
 * You will need to install the WooCommerce plugin - http://wordpress.org/plugins/woocommerce/
-* **Improvements in version 1.9:** Now with lots of re-styling of WooCommerce as Bootstrap (see `bst.js` and `bst.css`). Note: the WooCommerce stylesheet has not been 'put out of gear'. Therefore some of the basic WooCommerce styling is implemented while others styles (e.g. buttons, form elements, message and information panels) have had their styles _over-ridden_ by Bootstrap styles. This has been accomplished mostly by using jQuery to swap WooCommerce classes for Bootstrap classes; however, some jQuery-added inline styles and some stylesheet-added button styles have also been used. (These are all easy to remove by deleting if you don't want them - see below.)
+* **NEW: Improvements in version 1.9:** Now with lots of re-styling of WooCommerce as Bootstrap (see `bst.js` and `bst.css`). Note: the WooCommerce stylesheet has not been 'put out of gear'. Therefore some of the basic WooCommerce styling is implemented while others styles (e.g. buttons, form elements, message and information panels) have had their styles _over-ridden_ by Bootstrap styles. This has been accomplished mostly by using jQuery to swap WooCommerce classes for Bootstrap classes; however, some jQuery-added inline styles and some stylesheet-added button styles have also been used. (These are all easy to remove by deleting if you don't want them - see below.)
 * Your website will need hyperlinks to "Shop", "My Account", "Cart" and "Checkout" e.g. in your primary menu.
 * You will need to add some WooCommerce Widgets to the sidebar (at minimum, WooCommerce Cart and WooCommerce Categories)
 * And, of course, you will need to add salable items to your shop, and set up your payment gateway.
