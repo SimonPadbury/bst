@@ -32,7 +32,7 @@ This theme has been built for use as a starter theme and as a learning aid for p
 
 The navbar has some modifications that make the dropdown menu appear on hover (in `bst.js` plus `bst.css`). *The Bootstrap js and css have not been changed*.
 
-_Hovernav_ only operates for screen sizes >=768px. It doesn't operate on phones, where Bootstrap displays the navbar as a dropdown menu system).
+_Hovernav_ only operates for screen sizes >=768px. It doesn't operate on phones, where Bootstrap displays the navbar as as the usual dropdown menu system).
 
 You can easily delete the _hovernav_ segments of bst.js and bst.css if you don't want them. Removing _hovernav_ will not affect the functionality of _meganav_.
 
