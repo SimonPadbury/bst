@@ -51,7 +51,7 @@ The navbar has some modifications that enable **child links and grandchild links
 You can easily delete the _meganav_ segments of bst.js and bst.css if you don't want them. Removing _meganav_ will not affect the functionality of _hovernav_.
 
 
-##Notes on WooCommerce support
+##WooCommerce support
 
 * You will need to install the WooCommerce plugin - http://wordpress.org/plugins/woocommerce/
 * **NEW: Improvements in version 1.9:** Now with lots of re-styling of WooCommerce as Bootstrap (see `bst.js` and `bst.css`). Note: the WooCommerce stylesheet has not been 'put out of gear'. Therefore some of the basic WooCommerce styling is implemented while others styles (e.g. buttons, form elements, message and information panels) have had their styles _over-ridden_ by Bootstrap styles. This has been accomplished mostly by using jQuery to swap WooCommerce classes for Bootstrap classes; however, some jQuery-added inline styles and some stylesheet-added button styles have also been used. (These are all easy to remove by deleting if you don't want them - see below.)
@@ -62,9 +62,9 @@ You can easily delete the _meganav_ segments of bst.js and bst.css if you don't 
 Find out more about WooCommerce here: http://www.woothemes.com/woocommerce/
 
 
-###What if you don't want WooCommerce support in BST?
+###What if you don't want WooCommerce support?
 
-Simply remove and delete these things that you won't be needing:
+Simply remove and delete these things that you won't be needing - and everything else will just work fine:
 
 * **Remove:** woocommerce.php.
 * **Remove:** /functions/woocommerce-setup.php.
