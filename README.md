@@ -12,7 +12,7 @@ BST had grown complicated over the years with add-ons, but today (17 Dec 2014) I
 
 ###Looking for WooCommerce support, Meganav (mega-menu navbar), Hovernav (navbar dropdown on hover), and other interesting stuff?
 
-All these modifications to BST are now in BST's big brother **BST Plus.**
+All these modifications to BST have now been moved to BST's big brother, **BST Plus.**
 
 Go to the BST Plus repository on GitHub: [https://github.com/SimonPadbury/bst-plus](https://github.com/SimonPadbury/bst-plus)
 
@@ -29,7 +29,7 @@ Go to the BST Plus repository on GitHub: [https://github.com/SimonPadbury/bst-pl
 * [MIT licence](http://opensource.org/licenses/MIT) (open source).
 
 -----
+
 ## Do you require a starter *child theme* for BST? 
 
 [https://github.com/SimonPadbury/bst-child](https://github.com/SimonPadbury/bst-child).
-
