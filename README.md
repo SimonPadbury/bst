@@ -89,7 +89,7 @@ Simply remove and delete these things that you won't be needing - and everything
 Do all that correctly, and this WordPress theme will still work! 
 
 -----
-Do you require a starter *child theme* for BST? 
+### Do you require a starter *child theme* for BST? 
 
 [https://github.com/SimonPadbury/bst-child](https://github.com/SimonPadbury/bst-child).
------
+
