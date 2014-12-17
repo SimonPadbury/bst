@@ -6,11 +6,6 @@
 
 This theme has been built for use as a starter theme and as a learning aid for people who wish to get into WordPress theme design.
 
------
-
-Do you require a starter *child theme* for BST? Look here: [https://github.com/SimonPadbury/bst-child](https://github.com/SimonPadbury/bst-child).
------
-
 ##Features
 
 * *Simple, intuitive, clean code.*
@@ -92,3 +87,9 @@ Simply remove and delete these things that you won't be needing - and everything
 * **Modify** the comments in `style.css`,
 
 Do all that correctly, and this WordPress theme will still work! 
+
+-----
+Do you require a starter *child theme* for BST? 
+
+[https://github.com/SimonPadbury/bst-child](https://github.com/SimonPadbury/bst-child).
+-----
