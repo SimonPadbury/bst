@@ -55,3 +55,39 @@ function bst_browser_body_class( $classes ) {
     return $classes;
 }
 add_filter( 'body_class', 'bst_browser_body_class' );
+
+/* Bootstrap pagination
+========================
+Copied and modified from:
+http://scriptsell.net/bootstrap-pagination-in-wordpress-theme/
+*/
+function bst_pagination( $query=null ) {
+  global $wp_query;
+  $query = $query ? $query : $wp_query;
+  $length = 999999999; // This needs to be an unlikely integer
+ 
+  $paginate = paginate_links(
+        array(
+            'base' => str_replace( $length, '%#%', esc_url( get_pagenum_link( $length ) ) ),
+            'type' => 'array',
+            'total' => $query->max_num_pages,
+            'format' => '?paged=%#%',
+            'current' => max( 1, get_query_var('paged') ),
+            'prev_text' => __('<i class="glyphicon glyphicon-arrow-left"></i> Previous'),
+            'next_text' => __('Next <i class="glyphicon glyphicon-arrow-right"></i>'),
+        )
+  );
+  if ($query->max_num_pages > 1) :
+  ?>
+        <ul class="pagination pagination-centered">
+          <?php
+          foreach ( $paginate as $page ) {
+              if(!preg_match('/^<span class="page-numbers dots">/',$page)){
+                 echo '<li>' . $page . '</li>';
+              }
+          }
+          ?>
+        </ul>
+<?php
+  endif;
+}
