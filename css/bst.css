@@ -12,28 +12,42 @@ Max content widths
 
 /*
 Header logo
-An example of how to use CSS to display an image as a background of an HTML element.
-*/
+If you require a Site title and a logo, an example of how to do this is provided below (use your own logo):
 
 #site-title a {
   display: inline-block;
-  padding: 30px 0 30px 100px;
-  background: url(../img/bst.png) 0 0 no-repeat;
-  background-size: 95px 95px
+	padding-left 60px;
+  background: url(../img/logo.png) 0 0 no-repeat;
 }
-#site-title a:hover {
-  background: url(../img/bst-hover.png) 0 0 no-repeat;
-  background-size: 95px 95px;
-  text-decoration: none
+*/
+
+/*
+Main content
+*/
+
+#content article {
+  margin-bottom: 40px
 }
-.main-nav {
-  margin-top: 20px
+#content header {
+  margin: 20px 0
+}
+#content section {
+  margin-bottom: 20px
+}
+#content footer {
+  padding-bottom: 20px
 }
 
 /*
 Sidebar
 */
 
+.sidebar {
+  margin-top: 20px
+}
+.sidebar section {
+  margin-bottom: 40px
+}
 .sidebar ul,
 .sidebar ol {
   list-style-type: none;
@@ -47,30 +61,20 @@ Sidebar
 Hide form placeholders on focus
 */
 
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
-input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus::-webkit-input-placeholder { color: transparent; }
+input:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
+textarea:focus::-webkit-input-placeholder { color: transparent; }
+textarea:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
+textarea:focus::-moz-placeholder { color: transparent; } /* FF 19+ */ 
 
 /*
-Footer
+Comments
 */
 
-.footer ul,
-.footer ol {
-  list-style-type: none;
-  padding: 0
+#respond {
+  margin-top: 40px
 }
-.footer li {
-  margin: 10px 0
-}
-.sub-footer p {
-  text-align: center
-}
-
-/*
-Commentlist
-*/
-
 ol.commentlist {
 	counter-reset: li; /* Initiate a counter */
 	padding: 0
@@ -122,4 +126,27 @@ ol.commentlist li ul {
 }
 .reply p {
   margin: 0
+}
+
+/*
+Site footer
+*/
+
+.site-footer {
+  padding: 40px 0
+}
+.site-footer ul,
+.site-footer ol {
+  list-style-type: none;
+  padding: 0
+}
+.site-footer li {
+  margin: 10px 0
+}
+.site-sub-footer p {
+  text-align: center
+}
+
+.site-footer p {
+  text-align: center
 }
