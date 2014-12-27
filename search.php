@@ -1,4 +1,4 @@
-<?php get_template_part('parts/header'); ?>
+<?php get_template_part('includes/header'); ?>
 
 <div class="container">
   <div class="row">
@@ -7,28 +7,15 @@
       <div id="content" role="main">
         <h2><?php _e('Search Results for', 'bst'); ?> &ldquo;<?php the_search_query(); ?>&rdquo;</h2>
         <hr/>
-        <?php if(have_posts()): while(have_posts()): the_post();?>
-        <article role="article" id="post_<?php the_ID()?>" <?php post_class()?>>
-          <header>
-            <h4><a href="<?php the_permalink(); ?>"><?php the_title()?></a></h4>
-          </header>
-          <?php the_excerpt(); ?>
-          <hr/>
-        </article>
-        <?php endwhile; ?> 
-        <?php else: ?>
-        <div class="alert alert-warning">
-          <i class="glyphicon glyphicon-exclamation-sign"></i> <?php _e('Sorry, your search yielded no results.', 'bst'); ?>
-        </div>
-        <?php endif;?>
+				<?php get_template_part('includes/loops/content', 'search'); ?>
       </div><!-- /#content -->
     </div>
     
     <div class="col-xs-6 col-sm-4" id="sidebar" role="navigation">
-        <?php get_template_part('parts/sidebar'); ?>
+        <?php get_template_part('includes/sidebar'); ?>
     </div>
     
   </div><!-- /.row -->
 </div><!-- /.container -->
 
-<?php get_template_part('parts/footer'); ?>
+<?php get_template_part('includes/footer'); ?>
