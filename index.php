@@ -1,7 +1,7 @@
 <?php get_template_part('parts/header'); ?>
 
 <div class="container">
-  <div class="row row-offcanvas">
+  <div class="row">
     
     <div class="col-xs-12 col-sm-8">
       <div id="content" role="main">
