@@ -114,4 +114,5 @@ class BootstrapNavMenuWalker extends Walker_Nav_Menu {
 
 }
 
-register_nav_menu('navbar', __('Main menu (below site title)', 'bst'));
+register_nav_menu('navbar-left', __('Main menu (left)', 'bst'));
+register_nav_menu('navbar-right', __('Main menu (right)', 'bst'));
