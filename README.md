@@ -1,12 +1,14 @@
 #BST - A Bootstrap 3 Starter Theme, for WordPress
 
+*Version 2.2*
+
 **BST is a simple WordPress starter theme loaded with Bootstrap 3.**
 
-*Version 2.2*
+[https://github.com/SimonPadbury/bst](https://github.com/SimonPadbury/bst)
 
 This theme has been built for use as a starter theme and as a learning aid for people who wish to get into WordPress theme design.
 
-BST had grown complicated over the years with add-ons, but today (17 Dec 2014) I have removed them, taking BST back to being a simple starter theme again. But don't worry...
+*Are you looking for WooCommerce support, Meganav (mega-menu navbar), Hovernav (navbar dropdown on hover), and other interesting stuff?* All these modifications to BST have been moved to BST's big brother, **BST Plus.** [https://github.com/SimonPadbury/bst-plus](https://github.com/SimonPadbury/bst-plus)
 
 -----
 
@@ -25,15 +27,7 @@ BST had grown complicated over the years with add-ons, but today (17 Dec 2014) I
 
 -----
 
-## Do you require a starter *child theme* for BST? 
+##Do you require a starter *child theme* for BST? 
 
 Use this to start, to ensure that the child theme CSS is enqueued after the BST CSS: 
 [https://github.com/SimonPadbury/bst-child](https://github.com/SimonPadbury/bst-child).
-
------
-
-###Looking for WooCommerce support, Meganav (mega-menu navbar), Hovernav (navbar dropdown on hover), and other interesting stuff?
-
-All these modifications to BST have been moved to BST's big brother, **BST Plus.**
-
-Go to the BST Plus repository on GitHub: [https://github.com/SimonPadbury/bst-plus](https://github.com/SimonPadbury/bst-plus)
