@@ -31,11 +31,11 @@
       <?php				
             $args = array(
               'theme_location' 	=> 'navbar-left',
-              'depth' 					=> 0,
-              'container'				=> false,
-              'fallback_cb' 		=> false,
-              'menu_class' 			=> 'nav navbar-nav',
-              'walker' 					=> new BootstrapNavMenuWalker()
+              'depth' 		=> 0,
+              'container'	=> false,
+              'fallback_cb' 	=> false,
+              'menu_class' 	=> 'nav navbar-nav',
+              'walker' 		=> new BootstrapNavMenuWalker()
             );
             wp_nav_menu($args);
         ?>
@@ -43,11 +43,11 @@
         <?php				
             $args = array(
               'theme_location' 	=> 'navbar-right',
-              'depth' 					=> 0,
-              'container'				=> false,
-              'fallback_cb' 		=> false,
-              'menu_class' 			=> 'nav navbar-nav navbar-right',
-              'walker' 					=> new BootstrapNavMenuWalker()
+              'depth' 		=> 0,
+              'container'	=> false,
+              'fallback_cb' 	=> false,
+              'menu_class' 	=> 'nav navbar-nav navbar-right',
+              'walker' 		=> new BootstrapNavMenuWalker()
             );
             wp_nav_menu($args);
         ?>
