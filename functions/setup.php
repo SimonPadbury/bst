@@ -56,6 +56,9 @@ function bst_browser_body_class( $classes ) {
 }
 add_filter( 'body_class', 'bst_browser_body_class' );
 
+// Add post formats support. See http://codex.wordpress.org/Post_Formats
+add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
+
 /* Bootstrap pagination
 ========================
 Copied and modified from:
