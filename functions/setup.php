@@ -1,12 +1,11 @@
 <?php
 
 function bst_setup() {
-  add_editor_style('css/editor-style.css');
-  add_theme_support('post-thumbnails');
+	add_editor_style('css/editor-style.css');
+	add_theme_support('post-thumbnails');
 	update_option('thumbnail_size_w', 170);
-  update_option('medium_size_w', 470);
-  update_option('large_size_w', 970);
-
+	update_option('medium_size_w', 470);
+	update_option('large_size_w', 970);
 }
 add_action('init', 'bst_setup');
 
@@ -59,11 +58,9 @@ add_filter( 'body_class', 'bst_browser_body_class' );
 // Add post formats support. See http://codex.wordpress.org/Post_Formats
 add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
 
-/* 
-Bootstrap pagination
-====================
-Copied and modified from: http://scriptsell.net/bootstrap-pagination-in-wordpress-theme/
-*/
+// Bootstrap pagination
+//Copied and modified from: http://scriptsell.net/bootstrap-pagination-in-wordpress-theme/
+
 function bst_pagination( $query=null ) {
   global $wp_query;
   $query = $query ? $query : $wp_query;
@@ -83,13 +80,13 @@ function bst_pagination( $query=null ) {
   if ($query->max_num_pages > 1) :
   ?>
         <ul class="pagination pagination-centered">
-          <?php
-          foreach ( $paginate as $page ) {
-              if(!preg_match('/^<span class="page-numbers dots">/',$page)){
-                 echo '<li>' . $page . '</li>';
-              }
-          }
-          ?>
+        	<?php
+			foreach ( $paginate as $page ) {
+				if(!preg_match('/^<span class="page-numbers dots">/',$page)){
+					echo '<li>' . $page . '</li>';
+				}
+			}
+		?>
         </ul>
 <?php
   endif;
