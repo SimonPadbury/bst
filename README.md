@@ -24,12 +24,16 @@ Go to the BST Plus repository on GitHub: [https://github.com/SimonPadbury/bst-pl
 * CSS, JS, functions and template parts are organized into different folders.
 * **Bootstrap 3.3.1** - CSS and JS enqueued. You can simply swap the default Bootstrap 3 files (included) for a custom made Bootstrap 3, and this theme will still work.
 * **jQuery 1.11.1** enqueued - WordPress's onboard jQuery.
-* A starter CSS theme - `bst.css`, enqueued. (**Don't** put your own styles in `style.css`.)
+* A starter CSS theme - `css/bst.css`, enqueued. (**Don't** put your own styles in `style.css`.)
 * Visual editor stylesheet - into which the same Bootstrap 3 and starter CSS theme are preloaded by `@import`, so that what you see in the visual editor is (mostly!) what you get at the front end (WYSI(M!)WYG). E.g. you will see the theme's typpography in the WordPress Post/Page editor, but its width will not be the same as your article column width in the front end.
+* Two Wordpress menu positions in the Bootstrap navbar (in .navbar-left and .navbar-right).
+* Optional search form built into the navbar.
+* Bootstrap pagination ( e.g. `<- Previous | 1 | 2 | 3 | Next -> `) for Blog index and category pages.
 * [MIT licence](http://opensource.org/licenses/MIT) (open source).
 
 -----
 
 ## Do you require a starter *child theme* for BST? 
 
+Use this to start, to ensure that the child theme CSS is enqueued after the BST CSS: 
 [https://github.com/SimonPadbury/bst-child](https://github.com/SimonPadbury/bst-child).
