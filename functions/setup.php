@@ -18,8 +18,8 @@ function bst_excerpt_readmore() {
 }
 add_filter('excerpt_more', 'bst_excerpt_readmore');
 
-/*  Browser detection body_class() output
-/* ------------------------------------ */ 
+// Browser detection body_class() output
+
 function bst_browser_body_class( $classes ) {
     global $is_lynx, $is_gecko, $is_IE, $is_opera, $is_NS4, $is_safari, $is_chrome, $is_iphone;
  
@@ -59,10 +59,10 @@ add_filter( 'body_class', 'bst_browser_body_class' );
 // Add post formats support. See http://codex.wordpress.org/Post_Formats
 add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
 
-/* Bootstrap pagination
-========================
-Copied and modified from:
-http://scriptsell.net/bootstrap-pagination-in-wordpress-theme/
+/* 
+Bootstrap pagination
+====================
+Copied and modified from: http://scriptsell.net/bootstrap-pagination-in-wordpress-theme/
 */
 function bst_pagination( $query=null ) {
   global $wp_query;
