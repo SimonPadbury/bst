@@ -14,7 +14,7 @@ This theme has been built for use as a starter theme and as a learning aid for p
 
 ##Features of BST
 
-* Simple, intuitive, organized, clean code.
+* Simple, intuitive, clean code.
 * CSS, JS, functions and template parts are organized into different folders.
 * Bootstrap 3.3.1 - CSS and JS enqueued. You can simply swap the default Bootstrap 3 files (included) for a custom made Bootstrap 3, and this theme will still work.
 * jQuery 1.11.1 enqueued - WordPress's onboard jQuery.
