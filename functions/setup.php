@@ -72,8 +72,8 @@ if ( ! function_exists( 'bst_pagination' ) ) {
 			'total' => $wp_query->max_num_pages,
 			'mid_size' => 5,
 			'prev_next' => True,
-			'prev_text' => __('<i class="glyphicon glyphicon-chevron-left"></i> Previous'),
-			'next_text' => __('Next <i class="glyphicon glyphicon-chevron-right"></i>'),
+			'prev_text' => __('<i class="glyphicon glyphicon-chevron-left"></i> Newer'),
+			'next_text' => __('Older <i class="glyphicon glyphicon-chevron-right"></i>'),
 			'type' => 'list'
 		) );
 		$paginate_links = str_replace( "<ul class='page-numbers'>", "<ul class='pagination'>", $paginate_links );
