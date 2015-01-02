@@ -59,9 +59,6 @@ add_filter( 'body_class', 'bst_browser_body_class' );
 add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
 
 // Bootstrap pagination
-//Copied and modified from: http://scriptsell.net/bootstrap-pagination-in-wordpress-theme/
-
-// Bootstrap pagination
 
 if ( ! function_exists( 'bst_pagination' ) ) {
 	function bst_pagination() {
