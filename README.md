@@ -22,7 +22,7 @@ This theme has been built for use as a starter theme and as a learning aid for p
 * Visual editor stylesheet - into which the same Bootstrap 3 and starter CSS theme are preloaded by `@import`, so that what you see in the visual editor is (mostly!) what you get at the front end (WYSI(M!)WYG). E.g. you will see the theme's typpography in the WordPress Post/Page editor, but its width will not be the same as your article column width in the front end.
 * Two Wordpress menu positions in the Bootstrap navbar (in .navbar-left and .navbar-right).
 * Optional search form built into the navbar.
-* Bootstrap pagination ( e.g. `<- Previous | 1 | 2 | 3 | Next -> `) for Blog index and category pages.
+* Bootstrap pagination ( e.g. ` 1 | 2 | 3 | Older -> `) for Blog index and category pages.
 * [MIT licence](http://opensource.org/licenses/MIT) (open source).
 
 -----
