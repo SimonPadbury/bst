@@ -73,5 +73,4 @@ If you are displaying your site title in the "brand" link in the Bootstrap navba
     </div>
   </div>
 </div>
-*/
-?>
+*/?>
