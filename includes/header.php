@@ -55,15 +55,13 @@
   </div><!-- /.container-fluid -->
 </nav>
   
-<?php
-/*
+<!--
 Site Title
 ==========
+If you are displaying your site title in the "brand" link in the Bootstrap navbar, 
+then you probably don't require a site title. Alternatively you can use the example below. 
+See also the accompanying CSS example in css/bst.css .
 
-If you are displaying your site title in the "brand" link in the Bootstrap navbar, then you probably don't require a site title. Alternatively you can use the example below (e.g. copy it out of this PHP block comment and paste it below the nvbar). See also the accompanying CSS example in css/bst.css .
-*/
-
-/*
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
@@ -73,5 +71,4 @@ If you are displaying your site title in the "brand" link in the Bootstrap navba
     </div>
   </div>
 </div>
-*/
-?>
+-->
