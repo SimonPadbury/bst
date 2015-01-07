@@ -56,5 +56,3 @@ function author_link(){
 	return $return;
 }
 add_filter('get_comment_author_link', 'author_link');
-
-?>
