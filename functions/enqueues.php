@@ -31,5 +31,3 @@ function bst_enqueues() {
 	}
 }
 add_action('wp_enqueue_scripts', 'bst_enqueues', 100);
-
-?>
