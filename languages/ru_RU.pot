@@ -42,12 +42,12 @@ msgstr "Читать дальше"
 msgid "Filed under"
 msgstr "Категории"
 
-#: .././category.php:27 .././index.php:23 .././parts/comments.php:19
+#: .././category.php:27 .././index.php:23 .././includes/loops/comments.php:19
 #: .././single.php:20
 msgid "Comments"
 msgstr "Комментарии"
 
-#: .././category.php:27 .././index.php:23 .././parts/comments.php:19
+#: .././category.php:27 .././index.php:23 .././includes/loops/comments.php:19
 #: .././single.php:20
 msgid "None"
 msgstr "Отсутствуют"
@@ -108,94 +108,94 @@ msgstr ""
 msgid "&hellip; "
 msgstr ""
 
-#: .././parts/comments.php:8
+#: .././includes/loops/comments.php:8
 msgid "This post is password protected. Enter the password to view comments."
 msgstr ""
 "Этот пост заблокирован паролем. Введите пароль для просмотра комментариев."
 
-#: .././parts/comments.php:17
+#: .././includes/loops/comments.php:17
 msgid "Feedback"
 msgstr "Обратная связь"
 
-#: .././parts/comments.php:34
+#: .././includes/loops/comments.php:34
 msgid "Be the first to write a comment."
 msgstr "Напишите комметарий первым."
 
-#: .././parts/comments.php:36
+#: .././includes/loops/comments.php:36
 msgid "Comments are closed for this post."
 msgstr "Комментарии для этого поста закрыты."
 
-#: .././parts/comments.php:43
+#: .././includes/loops/comments.php:43
 msgid "Your feedback"
 msgstr "Ваш ответ"
 
-#: .././parts/comments.php:43
+#: .././includes/loops/comments.php:43
 #, php-format
 msgid "Responses to %s"
 msgstr "В ответ %s"
 
-#: .././parts/comments.php:46
+#: .././includes/loops/comments.php:46
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr "Вы должны <a href=\"%s\">войти</a>, чтобы оставить комментарий."
 
-#: .././parts/comments.php:51
+#: .././includes/loops/comments.php:51
 msgid "Logged in as"
 msgstr "Вы вошли как"
 
-#: .././parts/comments.php:52
+#: .././includes/loops/comments.php:52
 msgid "Log out of this account"
 msgstr "Выйти из этого аккаунта"
 
-#: .././parts/comments.php:52
+#: .././includes/loops/comments.php:52
 msgid "Log out"
 msgstr "Выйти"
 
-#: .././parts/comments.php:56 .././parts/comments.php:57
+#: .././includes/loops/comments.php:56 .././parts/comments.php:57
 msgid "Your name"
 msgstr "Имя"
 
-#: .././parts/comments.php:56
+#: .././includes/loops/comments.php:56
 msgid "(required)"
 msgstr "(обязательно)"
 
-#: .././parts/comments.php:60 .././parts/comments.php:61
+#: .././includes/loops/comments.php:60 .././parts/comments.php:61
 msgid "Your email address"
 msgstr "Email"
 
-#: .././parts/comments.php:60
+#: .././includes/loops/comments.php:60
 msgid "(required, but will not be published)"
 msgstr "(обязательно, но не будет опубликовано)"
 
-#: .././parts/comments.php:64
+#: .././includes/loops/comments.php:64
 msgid "Your website"
 msgstr "Ваш сайт"
 
-#: .././parts/comments.php:64
+#: .././includes/loops/comments.php:64
 msgid "if you have one (not required)"
 msgstr "если имеется (не обязательно)"
 
-#: .././parts/comments.php:65
+#: .././includes/loops/comments.php:65
 msgid "Your website url"
 msgstr "Адрес сайта"
 
-#: .././parts/comments.php:69 .././parts/comments.php:70
+#: .././includes/loops/comments.php:69 .././includes/loops/comments.php:70
 msgid "Your comment"
 msgstr "Ваш комментарий"
 
-#: .././parts/comments.php:72
+#: .././includes/loops/comments.php:72
 msgid "Submit comment"
 msgstr "Отправить"
 
-#: .././parts/woocommerce-setup.php:88
+#: .././includes/loops/woocommerce-setup.php:88
 msgid "View your shopping cart"
 msgstr ""
 
-#: .././parts/woocommerce-setup.php:89
+#: .././includes/loops/woocommerce-setup.php:89
 msgid "Start shopping"
 msgstr ""
 
-#: .././parts/woocommerce-setup.php:93
+#: .././includes/loops/woocommerce-setup.php:93
 #, php-format
 msgid "%d item"
 msgid_plural "%d items"
