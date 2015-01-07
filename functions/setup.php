@@ -86,4 +86,3 @@ if ( ! function_exists( 'bst_pagination' ) ) {
 		}
 	}
 }
-?>
