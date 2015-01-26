@@ -11,8 +11,8 @@ function bst_widgets_init() {
     'description'     => __( 'The sidebar widget area', 'bst' ),
     'before_widget'   => '<section class="%1$s %2$s">',
     'after_widget'    => '</section>',
-    'before_title'    => '<h3>',
-    'after_title'     => '</h3>',
+    'before_title'    => '<h4>',
+    'after_title'     => '</h4>',
   ) );
 
   /*
@@ -24,8 +24,8 @@ function bst_widgets_init() {
     'description'     => __( 'The footer widget area', 'bst' ),
     'before_widget'   => '<div class="%1$s %2$s col-sm-4">',
     'after_widget'    => '</div>',
-    'before_title'    => '<h3>',
-    'after_title'     => '</h3>',
+    'before_title'    => '<h4>',
+    'after_title'     => '</h4>',
   ) );
 
 }
