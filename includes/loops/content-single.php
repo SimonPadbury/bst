@@ -23,6 +23,7 @@ The Single Posts Loop
         <section>
             <?php the_post_thumbnail(); ?>
             <?php the_content()?>
+            <?php wp_link_pages(); ?>
         </section>
     </article>
 <?php comments_template('/includes/loops/comments.php'); ?>
