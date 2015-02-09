@@ -52,7 +52,7 @@
             wp_nav_menu($args);
         ?>
     </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+  </div><!-- /.container -->
 </nav>
   
 <!--
