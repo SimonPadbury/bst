@@ -10,8 +10,8 @@ This theme has been built for use as a starter theme and as a learning aid for p
 
 -----
 
-*Are you looking for WooCommerce support? **WBST**, has WooCommerce support, Meganav (mega-menu navbar), Hovernav (navbar dropdown on hover) – [https://github.com/SimonPadbury/WBST](https://github.com/SimonPadbury/WBST).
-*Are you looking for even more? Check out **BST-Plus** [https://github.com/SimonPadbury/bst-plus](https://github.com/SimonPadbury/bst-plus).
+* Are you looking for WooCommerce support? **WBST**, has WooCommerce support, Meganav (mega-menu navbar), Hovernav (navbar dropdown on hover) – [https://github.com/SimonPadbury/WBST](https://github.com/SimonPadbury/WBST).
+* Are you looking for even more? Check out **BST-Plus** [https://github.com/SimonPadbury/bst-plus](https://github.com/SimonPadbury/bst-plus).
 
 -----
 
