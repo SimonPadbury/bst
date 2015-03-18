@@ -8,13 +8,6 @@
 
 This theme has been built for use as a starter theme and as a learning aid for people who wish to get into WordPress theme design.
 
------
-
-* Are you looking for WooCommerce support? **WBST**, has WooCommerce support, Meganav (mega-menu navbar), Hovernav (navbar dropdown on hover) – [https://github.com/SimonPadbury/WBST](https://github.com/SimonPadbury/WBST).
-* Are you looking for even more? Check out **BST-Plus** [https://github.com/SimonPadbury/bst-plus](https://github.com/SimonPadbury/bst-plus).
-
------
-
 ##Features of BST
 
 * Simple, intuitive, clean code.
@@ -34,3 +27,10 @@ This theme has been built for use as a starter theme and as a learning aid for p
 
 Use this to start, to ensure that the child theme CSS is enqueued after the BST CSS: 
 [https://github.com/SimonPadbury/bst-child](https://github.com/SimonPadbury/bst-child).
+
+-----
+
+##Looking for more?
+
+* **WBST**, has WooCommerce support, Meganav (mega-menu navbar), Hovernav (navbar dropdown on hover) – [https://github.com/SimonPadbury/WBST](https://github.com/SimonPadbury/WBST).
+* **BST-Plus** has all that WBST has, plus THA Action Hooks, Custom Post Type, and many more features – [https://github.com/SimonPadbury/bst-plus](https://github.com/SimonPadbury/bst-plus).
