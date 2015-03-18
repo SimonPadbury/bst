@@ -33,4 +33,4 @@ Use this to start, to ensure that the child theme CSS is enqueued after the BST 
 ###Looking for more features?
 
 * **WBST** has WooCommerce support, Meganav (mega-menu navbar), Hovernav (navbar dropdown on hover) – [https://github.com/SimonPadbury/WBST](https://github.com/SimonPadbury/WBST).
-* **BST-Plus** has all that WBST has, plus THA Action Hooks, Custom Post Type, and many more features – [https://github.com/SimonPadbury/bst-plus](https://github.com/SimonPadbury/bst-plus).
+* **BST-Plus** has all that WBST has, plus Admin Page Framework, THA Action Hooks, Custom Post Type, and many more features – [https://github.com/SimonPadbury/bst-plus](https://github.com/SimonPadbury/bst-plus).
