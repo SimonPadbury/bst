@@ -1,10 +1,7 @@
 #BST - A Bootstrap 3 Starter Theme, for WordPress
 
-<<<<<<< HEAD
-*Version 2.5*
+*Version 2.6*
 =======
-*Version 2.5.1*
->>>>>>> origin/master
 
 **BST is a simple WordPress starter theme loaded with Bootstrap 3.**
 
