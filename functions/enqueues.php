@@ -14,9 +14,6 @@ function bst_enqueues() {
   	wp_register_script('modernizr', get_template_directory_uri() . '/js/modernizr-2.8.3.min.js', false, null, true);
 	wp_enqueue_script('modernizr');
 
-  	wp_register_script('respond', get_template_directory_uri() . '/js/respond.min.js', false, null, true);
-	wp_enqueue_script('respond');
-
   	wp_register_script('bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', false, null, true);
 	wp_enqueue_script('bootstrap-js');
 

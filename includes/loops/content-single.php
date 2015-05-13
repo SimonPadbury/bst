@@ -11,7 +11,7 @@ The Single Posts Loop
             <h2><?php the_title()?></h2>
             <h4>
                 <em>
-                    <span class="text-muted" class="author"><?php _e('By', 'bst'); echo " "; the_author() ?>,</span>
+                    <span class="text-muted author"><?php _e('By', 'bst'); echo " "; the_author() ?>,</span>
                     <time  class="text-muted" datetime="<?php the_time('d-m-Y')?>"><?php the_time('jS F Y') ?></time>
                 </em>
             </h4>
