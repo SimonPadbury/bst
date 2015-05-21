@@ -39,20 +39,3 @@ function my_css_attributes_filter($var) {
   return is_array($var) ? array() : '';
 }
 */
-
-/*
-Filter to remove comment author website link. Use this if you wish to cut down the amount of spammers in your comments (while retaining the "Your website" comment field).
-See http://www.wpsquare.com/remove-comment-author-website-link-wordpress/
-*/
-function author_link(){
-	global $comment;
-	$comment_ID = $comment->user_id;
-	$author = get_comment_author( $comment_ID );
-	$url = get_comment_author_url( $comment_ID );
-	if ( empty( $url ) || 'http://' == $url )
-		$return = $author;
-	else
-		$return = "$author";
-	return $return;
-}
-add_filter('get_comment_author_link', 'author_link');
