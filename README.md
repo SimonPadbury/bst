@@ -3,6 +3,8 @@
 *Version 2.7*
 
 =======
+> If you are looking for a **Bootatrap 4** starter theme, look at **b4st**: [https://github.com/SimonPadbury/b4st](https://github.com/SimonPadbury/b4st).
+=======
 
 **BST is a simple WordPress starter theme loaded with Bootstrap 3.**
 
