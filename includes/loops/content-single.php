@@ -28,6 +28,5 @@ The Single Posts Loop
     </article>
 <?php comments_template('/includes/loops/comments.php'); ?>
 <?php endwhile; ?>
-<?php else: ?>
 <?php else: get_template_part('includes/loops/content', 'none'); endif; ?>
 <?php endif; ?>
