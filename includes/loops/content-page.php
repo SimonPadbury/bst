@@ -13,7 +13,7 @@ The Page Loop
         <?php the_content()?>
         <?php wp_link_pages(); ?>
     </article>
-<?php endwhile; else: ?>
+<?php endwhile; ?>
 <?php else: get_template_part('includes/loops/content', 'none'); endif; ?>
 <?php exit; ?>
 <?php endif; ?>
