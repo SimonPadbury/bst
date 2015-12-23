@@ -11,6 +11,7 @@ function bst_enqueues() {
 	wp_enqueue_style('bst-css');
 
 	/* Scripts */
+	
 	wp_register_script('bst-jquery', get_template_directory_uri() .'/js/jquery-1.11.3.min.js', __FILE__, false, '1.11.3', false);
 	wp_enqueue_script( 'bst-jquery' );
 
