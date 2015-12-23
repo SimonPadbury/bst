@@ -14,6 +14,5 @@ The Page Loop
         <?php wp_link_pages(); ?>
     </article>
 <?php endwhile; ?>
-<?php else: get_template_part('includes/loops/content', 'none'); endif; ?>
-<?php exit; ?>
+<?php else: get_template_part('includes/loops/content', 'none'); ?>
 <?php endif; ?>
