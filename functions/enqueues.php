@@ -12,7 +12,7 @@ function bst_enqueues() {
 
 	/* Scripts */
 	
-	wp_register_script('bst-jquery', get_template_directory_uri() .'/js/jquery-1.11.3.min.js', __FILE__, false, '1.11.3', false);
+	wp_register_script('bst-jquery', get_template_directory_uri() .'/js/jquery-1.11.3.min.js', false, '1.11.3', false);
 	wp_enqueue_script( 'bst-jquery' );
 
   	wp_register_script('modernizr', get_template_directory_uri() . '/js/modernizr-2.8.3.min.js', false, null, true);
