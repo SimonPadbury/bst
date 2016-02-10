@@ -132,9 +132,6 @@ ol.commentlist li ul {
 Site footer
 */
 
-.site-footer {
-  padding: 40px 0
-}
 .site-footer ul,
 .site-footer ol {
   list-style-type: none;
