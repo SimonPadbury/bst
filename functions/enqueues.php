@@ -12,8 +12,9 @@ function bst_enqueues() {
 
 	/* Scripts */
 	
-	wp_register_script('bst-jquery', get_template_directory_uri() .'/js/jquery-1.11.3.min.js', false, '1.11.3', false);
-	wp_enqueue_script( 'bst-jquery' );
+	wp_enqueue_script( 'jquery' );
+	/* Note: this above uses WordPress's onboard jQuery. You can enqueue other pre-registered scripts from WordPress too. See:
+	https://developer.wordpress.org/reference/functions/wp_enqueue_script/#Default_Scripts_Included_and_Registered_by_WordPress */
 
   	wp_register_script('modernizr', get_template_directory_uri() . '/js/modernizr-2.8.3.min.js', false, null, true);
 	wp_enqueue_script('modernizr');
