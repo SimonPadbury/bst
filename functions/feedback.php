@@ -19,7 +19,7 @@ function bst_comment($comment, $args, $depth) {
   <?php if ( 'div' != $args['style'] ) : ?>
     <div id="div-comment-<?php comment_ID() ?>" class="comment-body">
   <?php endif; ?>
-    <div class="comment-author vcard">
+    <div class="comment-author">
       <div style="width: 60px; float: left;">
         <?php echo get_avatar( $comment->comment_author_email, $size = '40'); ?>
       </div>
